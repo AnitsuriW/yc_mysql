@@ -45,7 +45,8 @@
     <developers>
         <developer>
             <organization>沈阳研创科技有限公司</organization>
-            <email>acerro@qq.com</email>
+            <organizationUrl>https://www.mindskip.net</organizationUrl>
+            <email>mindskip@qq.com</email>
         </developer>
     </developers>
 
@@ -253,7 +254,7 @@
                 <version>${spring.boot.version}</version>
                 <configuration>
                     <fork>true</fork>
-                    <mainClass>com.mindskip.xzs.YcApplication</mainClass>
+                    <mainClass>com.mindskip.xzs.XzsApplication</mainClass>
                 </configuration>
             </plugin>
             <plugin>

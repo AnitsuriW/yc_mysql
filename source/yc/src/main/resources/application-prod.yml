@@ -1,5 +1,5 @@
 logging:
-  path: /usr/log/yc/
+  path: /usr/log/xzs/
 
 spring:
   datasource:

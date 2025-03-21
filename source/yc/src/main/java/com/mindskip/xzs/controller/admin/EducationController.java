@@ -22,8 +22,6 @@ import com.github.pagehelper.PageInfo;
 import org.mybatis.logging.Logger;
 import org.mybatis.logging.LoggerFactory;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.http.MediaType;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.multipart.MultipartFile;
@@ -33,10 +31,6 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.nio.file.StandardCopyOption;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -53,19 +47,6 @@ public class EducationController extends BaseApiController {
         this.subjectService = subjectService;
         this.courseService = courseService;
         this.storageService = storageService;
-    }
-    @Configuration
-    @ConfigurationProperties(prefix = "file")
-    public class StorageProperties {
-        private String uploadDir;
-
-        public String getUploadDir() {
-            return uploadDir;
-        }
-
-        public void setUploadDir(String uploadDir) {
-            this.uploadDir = uploadDir;
-        }
     }
 
     @RequestMapping(value = "/subject/list", method = RequestMethod.POST)
@@ -205,19 +186,14 @@ public class EducationController extends BaseApiController {
             return RestResponse.fail(SystemCode.InnerError.getCode(), "删除失败");
         }
     }
-    @Autowired
-    private StorageProperties storageProperties;
     private String processCover(MultipartFile file) throws IOException {
-        String uploadDir = storageProperties.getUploadDir();
-        Path dirPath = Paths.get(uploadDir, "covers");
-        if (!Files.exists(dirPath)) {
-            Files.createDirectories(dirPath);
-        }
+        String uploadDir = "D:/uploads/covers/";
+        File dir = new File(uploadDir);
+        if (!dir.exists()) dir.mkdirs();
         String filename = UUID.randomUUID() + "_" + file.getOriginalFilename();
-        Path targetPath = dirPath.resolve(filename);
-        Files.copy(file.getInputStream(), targetPath, StandardCopyOption.REPLACE_EXISTING);
-
-        return "/api/file/covers/" + filename;
+        File targetFile = new File(dir, filename);
+        file.transferTo(targetFile);
+        return "api/file/covers/" + filename;
     }
 
     private Course buildCourseEntity(CourseCreateDTO dto, String coverPath) {
