@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mindskip.xzs.repository.CourseMapper">
+    <select id="page" resultMap="CourseResultMap">
+        SELECT
+        c.id,
+        c.title,
+        c.cover_path,
+        cu.id as unit_id,
+        cu.title as unit_title,
+        cr.id as resource_id,
+        cr.original_name
+        FROM course c
+        LEFT JOIN course_unit cu ON c.id = cu.course_id
+        LEFT JOIN course_resource cr ON cu.id = cr.unit_id
+        <where>
+            <if test="courseName != null and courseName != ''">
+                c.title LIKE CONCAT('%',#{courseName},'%')
+            </if>
+        </where>
+        ORDER BY c.id DESC
+    </select>
+    <resultMap id="CourseResultMap" type="com.mindskip.xzs.domain.Course">
+        <id property="id" column="id"/>
+        <result property="title" column="title"/>
+        <result property="coverPath" column="cover_path"/>
+        <result property="deleted" column="deleted"/>
+        <collection property="units" ofType="com.mindskip.xzs.domain.CourseUnit">
+            <id property="id" column="unit_id"/>
+            <result property="title" column="unit_title"/>
+            <collection property="resources" ofType="com.mindskip.xzs.domain.CourseResource">
+                <id property="id" column="resource_id"/>
+                <result property="originalName" column="original_name"/>
+            </collection>
+        </collection>
+    </resultMap>
+
+    <insert id="insertUnit" parameterType="com.mindskip.xzs.domain.CourseUnit">
+        INSERT INTO course_unit (course_id, title)
+        VALUES (#{course.id}, #{title})
+    </insert>
+
+    <insert id="insertResource" parameterType="com.mindskip.xzs.domain.CourseResource">
+        INSERT INTO course_resource
+            (unit_id, original_name, storage_path, file_type)
+        VALUES
+            (#{unit.id}, #{originalName}, #{storagePath}, #{fileType})
+    </insert>
+
+    <select id="getAllPublishedCourses" resultMap="CourseResultMap">
+        SELECT
+            c.id, c.title, c.cover_path,
+            cu.id as unit_id, cu.title as unit_title, cu.order_num,
+            cr.id as resource_id, cr.original_name, cr.storage_path, cr.file_type
+        FROM course c
+                 LEFT JOIN course_unit cu ON c.id = cu.course_id
+                 LEFT JOIN course_resource cr ON cu.id = cr.unit_id
+        WHERE c.deleted = 0
+    </select>
+</mapper>

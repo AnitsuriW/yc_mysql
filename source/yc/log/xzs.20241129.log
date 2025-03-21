@@ -1,0 +1,547 @@
+2024-11-29 10:11:33.417  INFO 26304 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Starting XzsApplication on acerro with PID 26304 (D:\Workshop\week18\xzs-mysql-master\source\xzs\target\classes started by 86190 in D:\Workshop\week18\xzs-mysql-master\source\xzs)
+2024-11-29 10:11:33.457  INFO 26304 --- [restartedMain] com.mindskip.xzs.XzsApplication          : The following profiles are active: dev
+2024-11-29 10:11:33.513  INFO 26304 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-29 10:11:33.513  INFO 26304 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-29 10:11:35.220  WARN 26304 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-11-29 10:11:35.249  INFO 26304 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-11-29 10:11:35.249  INFO 26304 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1736 ms
+2024-11-29 10:11:36.307  INFO 26304 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2687fe23, org.springframework.security.web.context.SecurityContextPersistenceFilter@54e96a56, org.springframework.security.web.header.HeaderWriterFilter@50cd8495, org.springframework.web.filter.CorsFilter@27794411, org.springframework.security.web.authentication.logout.LogoutFilter@7363dfd, com.mindskip.xzs.configuration.spring.security.RestLoginAuthenticationFilter@630fe2e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@762d2364, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4db81449, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1dbfaebe, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@6e0f8fbe, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4ef47dc8, org.springframework.security.web.session.SessionManagementFilter@30e601e9, org.springframework.security.web.access.ExceptionTranslationFilter@2922d732, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@39911e77]
+2024-11-29 10:11:36.791  INFO 26304 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-29 10:11:36.871  INFO 26304 --- [restartedMain] org.xnio                                 : XNIO version 3.3.8.Final
+2024-11-29 10:11:36.884  INFO 26304 --- [restartedMain] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2024-11-29 10:11:36.969  INFO 26304 --- [restartedMain] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8000 (http) with context path ''
+2024-11-29 10:11:36.974  INFO 26304 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Started XzsApplication in 4.185 seconds (JVM running for 6.115)
+2024-11-29 10:12:08.713  INFO 26304 --- [XNIO-1 task-2] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-29 10:12:08.715  INFO 26304 --- [XNIO-1 task-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-29 10:12:08.722  INFO 26304 --- [XNIO-1 task-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2024-11-29 10:12:12.220  INFO 26304 --- [XNIO-1 task-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-29 10:12:12.402  INFO 26304 --- [XNIO-1 task-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-29 10:12:12.410 DEBUG 26304 --- [XNIO-1 task-5] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:12:12.440 DEBUG 26304 --- [XNIO-1 task-5] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:12:12.487 DEBUG 26304 --- [XNIO-1 task-5] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:12:13.156 DEBUG 26304 --- [XNIO-1 task-5] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:12:13.157 DEBUG 26304 --- [XNIO-1 task-5] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:12:13.159 DEBUG 26304 --- [XNIO-1 task-5] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:12:13.179 DEBUG 26304 --- [XNIO-1 task-5] r.c.m.x.r.U.insertSelective              : ==>  Preparing: insert into t_user_event_log ( user_id, user_name, real_name, content, create_time ) values ( ?, ?, ?, ?, ? ) 
+2024-11-29 10:12:13.183 DEBUG 26304 --- [XNIO-1 task-5] r.c.m.x.r.U.insertSelective              : ==> Parameters: 1(Integer), student(String), 学生(String), student 登录了学之思开源考试系统(String), 2024-11-29 10:12:13.16(Timestamp)
+2024-11-29 10:12:13.209 DEBUG 26304 --- [XNIO-1 task-5] r.c.m.x.r.U.insertSelective              : <==    Updates: 1
+2024-11-29 10:12:13.268 DEBUG 26304 --- [XNIO-1 task-6] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:12:13.268 DEBUG 26304 --- [XNIO-1 task-6] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:12:13.271 DEBUG 26304 --- [XNIO-1 task-6] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:12:13.273 DEBUG 26304 --- [XNIO-1 task-6] r.c.m.x.r.MessageUserMapper.unReadCount  : ==>  Preparing: select count(*) from t_message_user where readed='f' and receive_user_id = ? 
+2024-11-29 10:12:13.273 DEBUG 26304 --- [XNIO-1 task-6] r.c.m.x.r.MessageUserMapper.unReadCount  : ==> Parameters: 1(Integer)
+2024-11-29 10:12:13.287 DEBUG 26304 --- [XNIO-1 task-6] r.c.m.x.r.MessageUserMapper.unReadCount  : <==      Total: 1
+2024-11-29 10:12:13.562 DEBUG 26304 --- [XNIO-1 task-7] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:12:13.563 DEBUG 26304 --- [XNIO-1 task-7] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:12:13.567 DEBUG 26304 --- [XNIO-1 task-8] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:12:13.568 DEBUG 26304 --- [XNIO-1 task-8] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:12:13.569 DEBUG 26304 --- [XNIO-1 task-9] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:12:13.569 DEBUG 26304 --- [XNIO-1 task-7] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:12:13.569 DEBUG 26304 --- [XNIO-1 task-9] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:12:13.571 DEBUG 26304 --- [XNIO-1 task-8] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:12:13.572 DEBUG 26304 --- [XNIO-1 task-9] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:12:13.572 DEBUG 26304 --- [XNIO-1 task-8] r.c.m.x.r.T.getByGradeLevel              : ==>  Preparing: select id, title, grade_level, frame_text_content_id, create_user, create_time, deleted, create_user_name from t_task_exam where deleted=0 and grade_level = ? 
+2024-11-29 10:12:13.572 DEBUG 26304 --- [XNIO-1 task-8] r.c.m.x.r.T.getByGradeLevel              : ==> Parameters: 1(Integer)
+2024-11-29 10:12:13.575 DEBUG 26304 --- [XNIO-1 task-9] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==>  Preparing: SELECT id,name,limit_start_time,limit_end_time FROM t_exam_paper WHERE deleted=0 and paper_type= ? and grade_level=? ORDER BY id desc limit 5 
+2024-11-29 10:12:13.575 DEBUG 26304 --- [XNIO-1 task-9] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==> Parameters: 1(Integer), 1(Integer)
+2024-11-29 10:12:13.587 DEBUG 26304 --- [XNIO-1 task-8] r.c.m.x.r.T.getByGradeLevel              : <==      Total: 0
+2024-11-29 10:12:13.591 DEBUG 26304 --- [XNIO-1 task-9] r.c.m.x.r.ExamPaperMapper.indexPaper     : <==      Total: 0
+2024-11-29 10:12:13.592 DEBUG 26304 --- [XNIO-1 task-9] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==>  Preparing: SELECT id,name,limit_start_time,limit_end_time FROM t_exam_paper WHERE deleted=0 and paper_type= ? and grade_level=? and ? between limit_start_time and limit_end_time ORDER BY id desc limit 5 
+2024-11-29 10:12:13.593 DEBUG 26304 --- [XNIO-1 task-9] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==> Parameters: 4(Integer), 1(Integer), 2024-11-29 10:12:13.592(Timestamp)
+2024-11-29 10:12:13.601 DEBUG 26304 --- [XNIO-1 task-9] r.c.m.x.r.ExamPaperMapper.indexPaper     : <==      Total: 0
+2024-11-29 10:18:39.669  INFO 26304 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-29 10:18:39.678  INFO 26304 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-29 10:18:39.680  INFO 26304 --- [Thread-11] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-11-29 10:18:51.546  INFO 26304 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Starting XzsApplication on acerro with PID 26304 (D:\Workshop\week18\xzs-mysql-master\source\xzs\target\classes started by 86190 in D:\Workshop\week18\xzs-mysql-master\source\xzs)
+2024-11-29 10:18:51.546  INFO 26304 --- [restartedMain] com.mindskip.xzs.XzsApplication          : The following profiles are active: dev
+2024-11-29 10:18:51.549  INFO 26304 --- [restartedMain] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class com.mindskip.xzs.XzsApplication: java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionProxy
+2024-11-29 10:18:51.551 ERROR 26304 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionProxy
+	at sun.reflect.annotation.AnnotationParser.parseClassArray(AnnotationParser.java:724)
+	at sun.reflect.annotation.AnnotationParser.parseArray(AnnotationParser.java:531)
+	at sun.reflect.annotation.AnnotationParser.parseMemberValue(AnnotationParser.java:355)
+	at sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:286)
+	at sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:120)
+	at sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:72)
+	at java.lang.Class.createAnnotationData(Class.java:3521)
+	at java.lang.Class.annotationData(Class.java:3510)
+	at java.lang.Class.getAnnotations(Class.java:3446)
+	at org.springframework.core.type.StandardAnnotationMetadata.<init>(StandardAnnotationMetadata.java:70)
+	at org.springframework.beans.factory.annotation.AnnotatedGenericBeanDefinition.<init>(AnnotatedGenericBeanDefinition.java:58)
+	at org.springframework.context.annotation.AnnotatedBeanDefinitionReader.doRegisterBean(AnnotatedBeanDefinitionReader.java:216)
+	at org.springframework.context.annotation.AnnotatedBeanDefinitionReader.registerBean(AnnotatedBeanDefinitionReader.java:145)
+	at org.springframework.context.annotation.AnnotatedBeanDefinitionReader.register(AnnotatedBeanDefinitionReader.java:135)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:156)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:135)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:127)
+	at org.springframework.boot.SpringApplication.load(SpringApplication.java:686)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:384)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202)
+	at com.mindskip.xzs.XzsApplication.main(XzsApplication.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+
+2024-11-29 10:18:54.176  INFO 26304 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Starting XzsApplication on acerro with PID 26304 (D:\Workshop\week18\xzs-mysql-master\source\xzs\target\classes started by 86190 in D:\Workshop\week18\xzs-mysql-master\source\xzs)
+2024-11-29 10:18:54.177  INFO 26304 --- [restartedMain] com.mindskip.xzs.XzsApplication          : The following profiles are active: dev
+2024-11-29 10:18:54.180  INFO 26304 --- [restartedMain] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class com.mindskip.xzs.XzsApplication: java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionProxy
+2024-11-29 10:18:54.181 ERROR 26304 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionProxy
+	at sun.reflect.annotation.AnnotationParser.parseClassArray(AnnotationParser.java:724)
+	at sun.reflect.annotation.AnnotationParser.parseArray(AnnotationParser.java:531)
+	at sun.reflect.annotation.AnnotationParser.parseMemberValue(AnnotationParser.java:355)
+	at sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:286)
+	at sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:120)
+	at sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:72)
+	at java.lang.Class.createAnnotationData(Class.java:3521)
+	at java.lang.Class.annotationData(Class.java:3510)
+	at java.lang.Class.getAnnotations(Class.java:3446)
+	at org.springframework.core.type.StandardAnnotationMetadata.<init>(StandardAnnotationMetadata.java:70)
+	at org.springframework.beans.factory.annotation.AnnotatedGenericBeanDefinition.<init>(AnnotatedGenericBeanDefinition.java:58)
+	at org.springframework.context.annotation.AnnotatedBeanDefinitionReader.doRegisterBean(AnnotatedBeanDefinitionReader.java:216)
+	at org.springframework.context.annotation.AnnotatedBeanDefinitionReader.registerBean(AnnotatedBeanDefinitionReader.java:145)
+	at org.springframework.context.annotation.AnnotatedBeanDefinitionReader.register(AnnotatedBeanDefinitionReader.java:135)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:156)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:135)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:127)
+	at org.springframework.boot.SpringApplication.load(SpringApplication.java:686)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:384)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202)
+	at com.mindskip.xzs.XzsApplication.main(XzsApplication.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+
+2024-11-29 10:18:59.445  INFO 26304 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Starting XzsApplication on acerro with PID 26304 (D:\Workshop\week18\xzs-mysql-master\source\xzs\target\classes started by 86190 in D:\Workshop\week18\xzs-mysql-master\source\xzs)
+2024-11-29 10:18:59.445  INFO 26304 --- [restartedMain] com.mindskip.xzs.XzsApplication          : The following profiles are active: dev
+2024-11-29 10:19:00.203  WARN 26304 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-11-29 10:19:00.204  INFO 26304 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-11-29 10:19:00.204  INFO 26304 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 753 ms
+2024-11-29 10:19:00.625  INFO 26304 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@413b06c, org.springframework.security.web.context.SecurityContextPersistenceFilter@260c51b0, org.springframework.security.web.header.HeaderWriterFilter@25758a16, org.springframework.web.filter.CorsFilter@2cacde79, org.springframework.security.web.authentication.logout.LogoutFilter@3a0b1367, com.mindskip.xzs.configuration.spring.security.RestLoginAuthenticationFilter@35b20602, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@26269c11, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@31691142, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@38c50843, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@5748b36, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3e7819e9, org.springframework.security.web.session.SessionManagementFilter@5bcb20fc, org.springframework.security.web.access.ExceptionTranslationFilter@27860e95, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@485c197e]
+2024-11-29 10:19:00.849  INFO 26304 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-29 10:19:00.893  INFO 26304 --- [restartedMain] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8000 (http) with context path ''
+2024-11-29 10:19:00.894  INFO 26304 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Started XzsApplication in 1.48 seconds (JVM running for 450.036)
+2024-11-29 10:19:00.896  INFO 26304 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-29 10:19:21.661  INFO 26304 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Starting XzsApplication on acerro with PID 26304 (D:\Workshop\week18\xzs-mysql-master\source\xzs\target\classes started by 86190 in D:\Workshop\week18\xzs-mysql-master\source\xzs)
+2024-11-29 10:19:21.661  INFO 26304 --- [restartedMain] com.mindskip.xzs.XzsApplication          : The following profiles are active: dev
+2024-11-29 10:19:22.296  WARN 26304 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-11-29 10:19:22.297  INFO 26304 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-11-29 10:19:22.297  INFO 26304 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 632 ms
+2024-11-29 10:19:22.683  INFO 26304 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@23279331, org.springframework.security.web.context.SecurityContextPersistenceFilter@3f246183, org.springframework.security.web.header.HeaderWriterFilter@77539559, org.springframework.web.filter.CorsFilter@a0aeba6, org.springframework.security.web.authentication.logout.LogoutFilter@2b1099c0, com.mindskip.xzs.configuration.spring.security.RestLoginAuthenticationFilter@2a871afe, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5a8ff91d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3984ac01, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@52960f35, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@5d8c14c8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2f68bceb, org.springframework.security.web.session.SessionManagementFilter@7761d3d4, org.springframework.security.web.access.ExceptionTranslationFilter@17422c9a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@804301b]
+2024-11-29 10:19:22.890  INFO 26304 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-29 10:19:22.927  INFO 26304 --- [restartedMain] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8000 (http) with context path ''
+2024-11-29 10:19:22.928  INFO 26304 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Started XzsApplication in 1.31 seconds (JVM running for 472.07)
+2024-11-29 10:19:22.930  INFO 26304 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-29 10:19:34.406  INFO 26304 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Starting XzsApplication on acerro with PID 26304 (D:\Workshop\week18\xzs-mysql-master\source\xzs\target\classes started by 86190 in D:\Workshop\week18\xzs-mysql-master\source\xzs)
+2024-11-29 10:19:34.406  INFO 26304 --- [restartedMain] com.mindskip.xzs.XzsApplication          : The following profiles are active: dev
+2024-11-29 10:19:35.153  WARN 26304 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-11-29 10:19:35.154  INFO 26304 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-11-29 10:19:35.154  INFO 26304 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 745 ms
+2024-11-29 10:19:35.682  INFO 26304 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@396b0928, org.springframework.security.web.context.SecurityContextPersistenceFilter@252232cc, org.springframework.security.web.header.HeaderWriterFilter@30705dba, org.springframework.web.filter.CorsFilter@66ba1646, org.springframework.security.web.authentication.logout.LogoutFilter@7c82b07e, com.mindskip.xzs.configuration.spring.security.RestLoginAuthenticationFilter@71c97268, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@57791d57, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@75d9e16c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@47f6ffe0, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@48783cc4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@79362c63, org.springframework.security.web.session.SessionManagementFilter@5d8cd878, org.springframework.security.web.access.ExceptionTranslationFilter@1548bc78, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3e7c2e45]
+2024-11-29 10:19:35.958  INFO 26304 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-29 10:19:36.000  INFO 26304 --- [restartedMain] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8000 (http) with context path ''
+2024-11-29 10:19:36.001  INFO 26304 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Started XzsApplication in 1.632 seconds (JVM running for 485.142)
+2024-11-29 10:19:36.004  INFO 26304 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-29 10:31:44.308  INFO 26304 --- [XNIO-4 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-29 10:31:44.309  INFO 26304 --- [XNIO-4 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-29 10:31:44.316  INFO 26304 --- [XNIO-4 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2024-11-29 10:32:40.069  INFO 26304 --- [XNIO-4 task-106] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-11-29 10:32:40.080  INFO 26304 --- [XNIO-4 task-106] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-11-29 10:32:40.080 DEBUG 26304 --- [XNIO-4 task-106] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:32:40.081 DEBUG 26304 --- [XNIO-4 task-106] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: admin(String)
+2024-11-29 10:32:40.082 DEBUG 26304 --- [XNIO-4 task-106] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:32:40.093 DEBUG 26304 --- [XNIO-4 task-106] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:32:40.093 DEBUG 26304 --- [XNIO-4 task-106] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: admin(String)
+2024-11-29 10:32:40.095 DEBUG 26304 --- [XNIO-4 task-106] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:32:40.097 DEBUG 26304 --- [XNIO-4 task-106] r.c.m.x.r.U.insertSelective              : ==>  Preparing: insert into t_user_event_log ( user_id, user_name, real_name, content, create_time ) values ( ?, ?, ?, ?, ? ) 
+2024-11-29 10:32:40.098 DEBUG 26304 --- [XNIO-4 task-106] r.c.m.x.r.U.insertSelective              : ==> Parameters: 2(Integer), admin(String), 管理员(String), admin 登录了学之思开源考试系统(String), 2024-11-29 10:32:40.095(Timestamp)
+2024-11-29 10:32:40.104 DEBUG 26304 --- [XNIO-4 task-106] r.c.m.x.r.U.insertSelective              : <==    Updates: 1
+2024-11-29 10:32:40.171 DEBUG 26304 --- [XNIO-4 task-107] r.c.m.x.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper where deleted=0 
+2024-11-29 10:32:40.172 DEBUG 26304 --- [XNIO-4 task-107] r.c.m.x.r.E.selectAllCount               : ==> Parameters: 
+2024-11-29 10:32:40.174 DEBUG 26304 --- [XNIO-4 task-107] r.c.m.x.r.E.selectAllCount               : <==      Total: 1
+2024-11-29 10:32:40.176 DEBUG 26304 --- [XNIO-4 task-107] r.c.m.x.r.QuestionMapper.selectAllCount  : ==>  Preparing: SELECT count(*) from t_question where deleted=0 
+2024-11-29 10:32:40.176 DEBUG 26304 --- [XNIO-4 task-107] r.c.m.x.r.QuestionMapper.selectAllCount  : ==> Parameters: 
+2024-11-29 10:32:40.191 DEBUG 26304 --- [XNIO-4 task-107] r.c.m.x.r.QuestionMapper.selectAllCount  : <==      Total: 1
+2024-11-29 10:32:40.194 DEBUG 26304 --- [XNIO-4 task-107] r.c.m.x.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper_answer 
+2024-11-29 10:32:40.194 DEBUG 26304 --- [XNIO-4 task-107] r.c.m.x.r.E.selectAllCount               : ==> Parameters: 
+2024-11-29 10:32:40.209 DEBUG 26304 --- [XNIO-4 task-107] r.c.m.x.r.E.selectAllCount               : <==      Total: 1
+2024-11-29 10:32:40.210 DEBUG 26304 --- [XNIO-4 task-107] r.c.m.x.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper_question_customer_answer 
+2024-11-29 10:32:40.210 DEBUG 26304 --- [XNIO-4 task-107] r.c.m.x.r.E.selectAllCount               : ==> Parameters: 
+2024-11-29 10:32:40.225 DEBUG 26304 --- [XNIO-4 task-107] r.c.m.x.r.E.selectAllCount               : <==      Total: 1
+2024-11-29 10:32:40.231 DEBUG 26304 --- [XNIO-4 task-107] r.c.m.x.r.U.selectCountByDate            : ==>  Preparing: SELECT create_time as name,COUNT(create_time) as value from ( SELECT DATE_FORMAT(create_time,'%Y-%m-%d') as create_time from t_user_event_log WHERE create_time between ? and ? ) a GROUP BY create_time 
+2024-11-29 10:32:40.231 DEBUG 26304 --- [XNIO-4 task-107] r.c.m.x.r.U.selectCountByDate            : ==> Parameters: 2024-11-01 00:00:00.0(Timestamp), 2024-11-30 23:59:59.0(Timestamp)
+2024-11-29 10:32:40.234 DEBUG 26304 --- [XNIO-4 task-107] r.c.m.x.r.U.selectCountByDate            : <==      Total: 2
+2024-11-29 10:32:40.239 DEBUG 26304 --- [XNIO-4 task-107] r.c.m.x.r.E.selectCountByDate            : ==>  Preparing: SELECT create_time as name,COUNT(create_time) as value from ( SELECT DATE_FORMAT(create_time,'%Y-%m-%d') as create_time from t_exam_paper_question_customer_answer WHERE create_time between ? and ? ) a GROUP BY create_time 
+2024-11-29 10:32:40.239 DEBUG 26304 --- [XNIO-4 task-107] r.c.m.x.r.E.selectCountByDate            : ==> Parameters: 2024-11-01 00:00:00.0(Timestamp), 2024-11-30 23:59:59.0(Timestamp)
+2024-11-29 10:32:40.240 DEBUG 26304 --- [XNIO-4 task-107] r.c.m.x.r.E.selectCountByDate            : <==      Total: 0
+2024-11-29 10:32:54.860 DEBUG 26304 --- [XNIO-4 task-108] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:32:54.861 DEBUG 26304 --- [XNIO-4 task-108] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: admin(String)
+2024-11-29 10:32:54.863 DEBUG 26304 --- [XNIO-4 task-108] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:32:54.866 DEBUG 26304 --- [XNIO-4 task-108] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:32:54.867 DEBUG 26304 --- [XNIO-4 task-108] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: admin(String)
+2024-11-29 10:32:54.868 DEBUG 26304 --- [XNIO-4 task-108] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:32:54.869 DEBUG 26304 --- [XNIO-4 task-108] r.c.m.x.r.U.insertSelective              : ==>  Preparing: insert into t_user_event_log ( user_id, user_name, real_name, content, create_time ) values ( ?, ?, ?, ?, ? ) 
+2024-11-29 10:32:54.870 DEBUG 26304 --- [XNIO-4 task-108] r.c.m.x.r.U.insertSelective              : ==> Parameters: 2(Integer), admin(String), 管理员(String), admin 登录了学之思开源考试系统(String), 2024-11-29 10:32:54.868(Timestamp)
+2024-11-29 10:32:54.882 DEBUG 26304 --- [XNIO-4 task-108] r.c.m.x.r.U.insertSelective              : <==    Updates: 1
+2024-11-29 10:33:25.976 DEBUG 26304 --- [XNIO-4 task-113] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:33:25.977 DEBUG 26304 --- [XNIO-4 task-113] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:33:25.978 DEBUG 26304 --- [XNIO-4 task-113] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:33:25.982 DEBUG 26304 --- [XNIO-4 task-113] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:33:25.982 DEBUG 26304 --- [XNIO-4 task-113] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:33:25.984 DEBUG 26304 --- [XNIO-4 task-113] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:33:25.984 DEBUG 26304 --- [XNIO-4 task-113] r.c.m.x.r.U.insertSelective              : ==>  Preparing: insert into t_user_event_log ( user_id, user_name, real_name, content, create_time ) values ( ?, ?, ?, ?, ? ) 
+2024-11-29 10:33:25.985 DEBUG 26304 --- [XNIO-4 task-113] r.c.m.x.r.U.insertSelective              : ==> Parameters: 1(Integer), student(String), 学生(String), student 登录了学之思开源考试系统(String), 2024-11-29 10:33:25.984(Timestamp)
+2024-11-29 10:33:25.999 DEBUG 26304 --- [XNIO-4 task-113] r.c.m.x.r.U.insertSelective              : <==    Updates: 1
+2024-11-29 10:33:26.025 DEBUG 26304 --- [XNIO-4 task-117] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:33:26.026 DEBUG 26304 --- [XNIO-4 task-117] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:33:26.029 DEBUG 26304 --- [XNIO-4 task-116] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:33:26.029 DEBUG 26304 --- [XNIO-4 task-115] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:33:26.029 DEBUG 26304 --- [XNIO-4 task-114] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:33:26.029 DEBUG 26304 --- [XNIO-4 task-114] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:33:26.029 DEBUG 26304 --- [XNIO-4 task-116] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:33:26.029 DEBUG 26304 --- [XNIO-4 task-115] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:33:26.030 DEBUG 26304 --- [XNIO-4 task-117] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:33:26.031 DEBUG 26304 --- [XNIO-4 task-114] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:33:26.032 DEBUG 26304 --- [XNIO-4 task-116] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:33:26.032 DEBUG 26304 --- [XNIO-4 task-115] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:33:26.033 DEBUG 26304 --- [XNIO-4 task-117] r.c.m.x.r.T.getByGradeLevel              : ==>  Preparing: select id, title, grade_level, frame_text_content_id, create_user, create_time, deleted, create_user_name from t_task_exam where deleted=0 and grade_level = ? 
+2024-11-29 10:33:26.033 DEBUG 26304 --- [XNIO-4 task-117] r.c.m.x.r.T.getByGradeLevel              : ==> Parameters: 1(Integer)
+2024-11-29 10:33:26.034 DEBUG 26304 --- [XNIO-4 task-114] r.c.m.x.r.MessageUserMapper.unReadCount  : ==>  Preparing: select count(*) from t_message_user where readed='f' and receive_user_id = ? 
+2024-11-29 10:33:26.034 DEBUG 26304 --- [XNIO-4 task-114] r.c.m.x.r.MessageUserMapper.unReadCount  : ==> Parameters: 1(Integer)
+2024-11-29 10:33:26.036 DEBUG 26304 --- [XNIO-4 task-117] r.c.m.x.r.T.getByGradeLevel              : <==      Total: 0
+2024-11-29 10:33:26.037 DEBUG 26304 --- [XNIO-4 task-116] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==>  Preparing: SELECT id,name,limit_start_time,limit_end_time FROM t_exam_paper WHERE deleted=0 and paper_type= ? and grade_level=? ORDER BY id desc limit 5 
+2024-11-29 10:33:26.038 DEBUG 26304 --- [XNIO-4 task-114] r.c.m.x.r.MessageUserMapper.unReadCount  : <==      Total: 1
+2024-11-29 10:33:26.038 DEBUG 26304 --- [XNIO-4 task-116] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==> Parameters: 1(Integer), 1(Integer)
+2024-11-29 10:33:26.040 DEBUG 26304 --- [XNIO-4 task-116] r.c.m.x.r.ExamPaperMapper.indexPaper     : <==      Total: 0
+2024-11-29 10:33:26.041 DEBUG 26304 --- [XNIO-4 task-116] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==>  Preparing: SELECT id,name,limit_start_time,limit_end_time FROM t_exam_paper WHERE deleted=0 and paper_type= ? and grade_level=? and ? between limit_start_time and limit_end_time ORDER BY id desc limit 5 
+2024-11-29 10:33:26.042 DEBUG 26304 --- [XNIO-4 task-116] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==> Parameters: 4(Integer), 1(Integer), 2024-11-29 10:33:26.041(Timestamp)
+2024-11-29 10:33:26.045 DEBUG 26304 --- [XNIO-4 task-116] r.c.m.x.r.ExamPaperMapper.indexPaper     : <==      Total: 0
+2024-11-29 10:33:34.983 DEBUG 26304 --- [XNIO-4 task-118] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:33:34.984 DEBUG 26304 --- [XNIO-4 task-118] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:33:34.986 DEBUG 26304 --- [XNIO-4 task-118] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:33:34.986 DEBUG 26304 --- [XNIO-4 task-118] r.c.m.x.r.S.getSubjectByLevel            : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where level= ? order by item_order 
+2024-11-29 10:33:34.986 DEBUG 26304 --- [XNIO-4 task-118] r.c.m.x.r.S.getSubjectByLevel            : ==> Parameters: 1(Integer)
+2024-11-29 10:33:35.001 DEBUG 26304 --- [XNIO-4 task-118] r.c.m.x.r.S.getSubjectByLevel            : <==      Total: 0
+2024-11-29 10:33:35.861 DEBUG 26304 --- [XNIO-4 task-119] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:33:35.862 DEBUG 26304 --- [XNIO-4 task-119] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:33:35.863 DEBUG 26304 --- [XNIO-4 task-119] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:33:35.899 DEBUG 26304 --- [XNIO-4 task-119] r.c.m.x.r.E.studentPage_COUNT            : ==>  Preparing: SELECT count(0) FROM t_exam_paper_answer WHERE create_user = ? 
+2024-11-29 10:33:35.899 DEBUG 26304 --- [XNIO-4 task-119] r.c.m.x.r.E.studentPage_COUNT            : ==> Parameters: 1(Integer)
+2024-11-29 10:33:35.900 DEBUG 26304 --- [XNIO-4 task-119] r.c.m.x.r.E.studentPage_COUNT            : <==      Total: 1
+2024-11-29 10:33:36.714 DEBUG 26304 --- [XNIO-4 task-120] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:33:36.715 DEBUG 26304 --- [XNIO-4 task-120] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:33:36.716 DEBUG 26304 --- [XNIO-4 task-120] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:33:36.721 DEBUG 26304 --- [XNIO-4 task-120] r.c.m.x.r.E.studentPage_COUNT            : ==>  Preparing: SELECT count(0) FROM t_exam_paper_question_customer_answer WHERE do_right = FALSE AND create_user = ? 
+2024-11-29 10:33:36.721 DEBUG 26304 --- [XNIO-4 task-120] r.c.m.x.r.E.studentPage_COUNT            : ==> Parameters: 1(Integer)
+2024-11-29 10:33:36.722 DEBUG 26304 --- [XNIO-4 task-120] r.c.m.x.r.E.studentPage_COUNT            : <==      Total: 1
+2024-11-29 10:33:37.805 DEBUG 26304 --- [XNIO-4 task-121] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:33:37.805 DEBUG 26304 --- [XNIO-4 task-122] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:33:37.805 DEBUG 26304 --- [XNIO-4 task-122] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:33:37.805 DEBUG 26304 --- [XNIO-4 task-121] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:33:37.808 DEBUG 26304 --- [XNIO-4 task-121] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:33:37.808 DEBUG 26304 --- [XNIO-4 task-122] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:33:37.809 DEBUG 26304 --- [XNIO-4 task-121] r.c.m.x.r.T.getByGradeLevel              : ==>  Preparing: select id, title, grade_level, frame_text_content_id, create_user, create_time, deleted, create_user_name from t_task_exam where deleted=0 and grade_level = ? 
+2024-11-29 10:33:37.809 DEBUG 26304 --- [XNIO-4 task-122] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==>  Preparing: SELECT id,name,limit_start_time,limit_end_time FROM t_exam_paper WHERE deleted=0 and paper_type= ? and grade_level=? ORDER BY id desc limit 5 
+2024-11-29 10:33:37.810 DEBUG 26304 --- [XNIO-4 task-121] r.c.m.x.r.T.getByGradeLevel              : ==> Parameters: 1(Integer)
+2024-11-29 10:33:37.810 DEBUG 26304 --- [XNIO-4 task-122] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==> Parameters: 1(Integer), 1(Integer)
+2024-11-29 10:33:37.811 DEBUG 26304 --- [XNIO-4 task-121] r.c.m.x.r.T.getByGradeLevel              : <==      Total: 0
+2024-11-29 10:33:37.811 DEBUG 26304 --- [XNIO-4 task-122] r.c.m.x.r.ExamPaperMapper.indexPaper     : <==      Total: 0
+2024-11-29 10:33:37.813 DEBUG 26304 --- [XNIO-4 task-122] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==>  Preparing: SELECT id,name,limit_start_time,limit_end_time FROM t_exam_paper WHERE deleted=0 and paper_type= ? and grade_level=? and ? between limit_start_time and limit_end_time ORDER BY id desc limit 5 
+2024-11-29 10:33:37.814 DEBUG 26304 --- [XNIO-4 task-122] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==> Parameters: 4(Integer), 1(Integer), 2024-11-29 10:33:37.813(Timestamp)
+2024-11-29 10:33:37.815 DEBUG 26304 --- [XNIO-4 task-122] r.c.m.x.r.ExamPaperMapper.indexPaper     : <==      Total: 0
+2024-11-29 10:51:06.799 DEBUG 26304 --- [XNIO-4 task-123] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:51:06.800 DEBUG 26304 --- [XNIO-4 task-123] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:51:06.802 DEBUG 26304 --- [XNIO-4 task-125] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:51:06.802 DEBUG 26304 --- [XNIO-4 task-125] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:51:06.802 DEBUG 26304 --- [XNIO-4 task-124] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:51:06.802 DEBUG 26304 --- [XNIO-4 task-126] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:51:06.802 DEBUG 26304 --- [XNIO-4 task-124] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:51:06.804 DEBUG 26304 --- [XNIO-4 task-126] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:51:06.805 DEBUG 26304 --- [XNIO-4 task-125] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:51:06.805 DEBUG 26304 --- [XNIO-4 task-126] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:51:06.806 DEBUG 26304 --- [XNIO-4 task-124] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:51:06.806 DEBUG 26304 --- [XNIO-4 task-123] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:51:06.807 DEBUG 26304 --- [XNIO-4 task-123] r.c.m.x.r.MessageUserMapper.unReadCount  : ==>  Preparing: select count(*) from t_message_user where readed='f' and receive_user_id = ? 
+2024-11-29 10:51:06.806 DEBUG 26304 --- [XNIO-4 task-125] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==>  Preparing: SELECT id,name,limit_start_time,limit_end_time FROM t_exam_paper WHERE deleted=0 and paper_type= ? and grade_level=? ORDER BY id desc limit 5 
+2024-11-29 10:51:06.807 DEBUG 26304 --- [XNIO-4 task-123] r.c.m.x.r.MessageUserMapper.unReadCount  : ==> Parameters: 1(Integer)
+2024-11-29 10:51:06.808 DEBUG 26304 --- [XNIO-4 task-125] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==> Parameters: 1(Integer), 1(Integer)
+2024-11-29 10:51:06.808 DEBUG 26304 --- [XNIO-4 task-126] r.c.m.x.r.T.getByGradeLevel              : ==>  Preparing: select id, title, grade_level, frame_text_content_id, create_user, create_time, deleted, create_user_name from t_task_exam where deleted=0 and grade_level = ? 
+2024-11-29 10:51:06.808 DEBUG 26304 --- [XNIO-4 task-126] r.c.m.x.r.T.getByGradeLevel              : ==> Parameters: 1(Integer)
+2024-11-29 10:51:06.809 DEBUG 26304 --- [XNIO-4 task-123] r.c.m.x.r.MessageUserMapper.unReadCount  : <==      Total: 1
+2024-11-29 10:51:06.809 DEBUG 26304 --- [XNIO-4 task-126] r.c.m.x.r.T.getByGradeLevel              : <==      Total: 0
+2024-11-29 10:51:06.811 DEBUG 26304 --- [XNIO-4 task-125] r.c.m.x.r.ExamPaperMapper.indexPaper     : <==      Total: 0
+2024-11-29 10:51:06.811 DEBUG 26304 --- [XNIO-4 task-125] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==>  Preparing: SELECT id,name,limit_start_time,limit_end_time FROM t_exam_paper WHERE deleted=0 and paper_type= ? and grade_level=? and ? between limit_start_time and limit_end_time ORDER BY id desc limit 5 
+2024-11-29 10:51:06.813 DEBUG 26304 --- [XNIO-4 task-125] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==> Parameters: 4(Integer), 1(Integer), 2024-11-29 10:51:06.811(Timestamp)
+2024-11-29 10:51:06.816 DEBUG 26304 --- [XNIO-4 task-125] r.c.m.x.r.ExamPaperMapper.indexPaper     : <==      Total: 0
+2024-11-29 10:51:20.718 DEBUG 26304 --- [XNIO-4 task-130] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:51:20.718 DEBUG 26304 --- [XNIO-4 task-129] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:51:20.718 DEBUG 26304 --- [XNIO-4 task-130] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:51:20.718 DEBUG 26304 --- [XNIO-4 task-129] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:51:20.718 DEBUG 26304 --- [XNIO-4 task-127] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:51:20.718 DEBUG 26304 --- [XNIO-4 task-127] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:51:20.727 DEBUG 26304 --- [XNIO-4 task-129] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:51:20.727 DEBUG 26304 --- [XNIO-4 task-127] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:51:20.727 DEBUG 26304 --- [XNIO-4 task-130] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:51:20.727 DEBUG 26304 --- [XNIO-4 task-128] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:51:20.728 DEBUG 26304 --- [XNIO-4 task-128] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:51:20.728 DEBUG 26304 --- [XNIO-4 task-129] r.c.m.x.r.T.getByGradeLevel              : ==>  Preparing: select id, title, grade_level, frame_text_content_id, create_user, create_time, deleted, create_user_name from t_task_exam where deleted=0 and grade_level = ? 
+2024-11-29 10:51:20.728 DEBUG 26304 --- [XNIO-4 task-130] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==>  Preparing: SELECT id,name,limit_start_time,limit_end_time FROM t_exam_paper WHERE deleted=0 and paper_type= ? and grade_level=? ORDER BY id desc limit 5 
+2024-11-29 10:51:20.728 DEBUG 26304 --- [XNIO-4 task-129] r.c.m.x.r.T.getByGradeLevel              : ==> Parameters: 1(Integer)
+2024-11-29 10:51:20.728 DEBUG 26304 --- [XNIO-4 task-130] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==> Parameters: 1(Integer), 1(Integer)
+2024-11-29 10:51:20.728 DEBUG 26304 --- [XNIO-4 task-130] r.c.m.x.r.ExamPaperMapper.indexPaper     : <==      Total: 0
+2024-11-29 10:51:20.728 DEBUG 26304 --- [XNIO-4 task-129] r.c.m.x.r.T.getByGradeLevel              : <==      Total: 0
+2024-11-29 10:51:20.728 DEBUG 26304 --- [XNIO-4 task-128] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:51:20.729 DEBUG 26304 --- [XNIO-4 task-130] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==>  Preparing: SELECT id,name,limit_start_time,limit_end_time FROM t_exam_paper WHERE deleted=0 and paper_type= ? and grade_level=? and ? between limit_start_time and limit_end_time ORDER BY id desc limit 5 
+2024-11-29 10:51:20.729 DEBUG 26304 --- [XNIO-4 task-128] r.c.m.x.r.MessageUserMapper.unReadCount  : ==>  Preparing: select count(*) from t_message_user where readed='f' and receive_user_id = ? 
+2024-11-29 10:51:20.729 DEBUG 26304 --- [XNIO-4 task-128] r.c.m.x.r.MessageUserMapper.unReadCount  : ==> Parameters: 1(Integer)
+2024-11-29 10:51:20.729 DEBUG 26304 --- [XNIO-4 task-128] r.c.m.x.r.MessageUserMapper.unReadCount  : <==      Total: 1
+2024-11-29 10:51:20.734 DEBUG 26304 --- [XNIO-4 task-130] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==> Parameters: 4(Integer), 1(Integer), 2024-11-29 10:51:20.728(Timestamp)
+2024-11-29 10:51:20.735 DEBUG 26304 --- [XNIO-4 task-130] r.c.m.x.r.ExamPaperMapper.indexPaper     : <==      Total: 0
+2024-11-29 10:51:27.395 DEBUG 26304 --- [XNIO-4 task-131] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:51:27.395 DEBUG 26304 --- [XNIO-4 task-131] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:51:27.397 DEBUG 26304 --- [XNIO-4 task-131] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:51:27.397 DEBUG 26304 --- [XNIO-4 task-131] r.c.m.x.r.MessageUserMapper.unReadCount  : ==>  Preparing: select count(*) from t_message_user where readed='f' and receive_user_id = ? 
+2024-11-29 10:51:27.397 DEBUG 26304 --- [XNIO-4 task-131] r.c.m.x.r.MessageUserMapper.unReadCount  : ==> Parameters: 1(Integer)
+2024-11-29 10:51:27.398 DEBUG 26304 --- [XNIO-4 task-131] r.c.m.x.r.MessageUserMapper.unReadCount  : <==      Total: 1
+2024-11-29 10:51:27.566 DEBUG 26304 --- [XNIO-4 task-132] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:51:27.566 DEBUG 26304 --- [XNIO-4 task-132] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:51:27.567 DEBUG 26304 --- [XNIO-4 task-132] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:51:27.632 DEBUG 26304 --- [XNIO-4 task-134] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:51:27.633 DEBUG 26304 --- [XNIO-4 task-133] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:51:27.633 DEBUG 26304 --- [XNIO-4 task-133] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:51:27.634 DEBUG 26304 --- [XNIO-4 task-134] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:51:27.634 DEBUG 26304 --- [XNIO-4 task-133] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:51:27.636 DEBUG 26304 --- [XNIO-4 task-134] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:51:27.637 DEBUG 26304 --- [XNIO-4 task-133] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==>  Preparing: SELECT id,name,limit_start_time,limit_end_time FROM t_exam_paper WHERE deleted=0 and paper_type= ? and grade_level=? ORDER BY id desc limit 5 
+2024-11-29 10:51:27.637 DEBUG 26304 --- [XNIO-4 task-134] r.c.m.x.r.T.getByGradeLevel              : ==>  Preparing: select id, title, grade_level, frame_text_content_id, create_user, create_time, deleted, create_user_name from t_task_exam where deleted=0 and grade_level = ? 
+2024-11-29 10:51:27.637 DEBUG 26304 --- [XNIO-4 task-134] r.c.m.x.r.T.getByGradeLevel              : ==> Parameters: 1(Integer)
+2024-11-29 10:51:27.637 DEBUG 26304 --- [XNIO-4 task-133] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==> Parameters: 1(Integer), 1(Integer)
+2024-11-29 10:51:27.639 DEBUG 26304 --- [XNIO-4 task-134] r.c.m.x.r.T.getByGradeLevel              : <==      Total: 0
+2024-11-29 10:51:27.639 DEBUG 26304 --- [XNIO-4 task-133] r.c.m.x.r.ExamPaperMapper.indexPaper     : <==      Total: 0
+2024-11-29 10:51:27.640 DEBUG 26304 --- [XNIO-4 task-133] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==>  Preparing: SELECT id,name,limit_start_time,limit_end_time FROM t_exam_paper WHERE deleted=0 and paper_type= ? and grade_level=? and ? between limit_start_time and limit_end_time ORDER BY id desc limit 5 
+2024-11-29 10:51:27.640 DEBUG 26304 --- [XNIO-4 task-133] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==> Parameters: 4(Integer), 1(Integer), 2024-11-29 10:51:27.639(Timestamp)
+2024-11-29 10:51:27.641 DEBUG 26304 --- [XNIO-4 task-133] r.c.m.x.r.ExamPaperMapper.indexPaper     : <==      Total: 0
+2024-11-29 10:53:06.512 DEBUG 26304 --- [XNIO-4 task-135] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:53:06.512 DEBUG 26304 --- [XNIO-4 task-135] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:53:06.514 DEBUG 26304 --- [XNIO-4 task-135] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:53:06.514 DEBUG 26304 --- [XNIO-4 task-135] r.c.m.x.r.MessageUserMapper.unReadCount  : ==>  Preparing: select count(*) from t_message_user where readed='f' and receive_user_id = ? 
+2024-11-29 10:53:06.515 DEBUG 26304 --- [XNIO-4 task-135] r.c.m.x.r.MessageUserMapper.unReadCount  : ==> Parameters: 1(Integer)
+2024-11-29 10:53:06.516 DEBUG 26304 --- [XNIO-4 task-135] r.c.m.x.r.MessageUserMapper.unReadCount  : <==      Total: 1
+2024-11-29 10:53:06.825 DEBUG 26304 --- [XNIO-4 task-138] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:53:06.825 DEBUG 26304 --- [XNIO-4 task-138] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:53:06.825 DEBUG 26304 --- [XNIO-4 task-137] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:53:06.826 DEBUG 26304 --- [XNIO-4 task-137] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:53:06.827 DEBUG 26304 --- [XNIO-4 task-137] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:53:06.827 DEBUG 26304 --- [XNIO-4 task-138] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:53:06.828 DEBUG 26304 --- [XNIO-4 task-138] r.c.m.x.r.T.getByGradeLevel              : ==>  Preparing: select id, title, grade_level, frame_text_content_id, create_user, create_time, deleted, create_user_name from t_task_exam where deleted=0 and grade_level = ? 
+2024-11-29 10:53:06.828 DEBUG 26304 --- [XNIO-4 task-138] r.c.m.x.r.T.getByGradeLevel              : ==> Parameters: 1(Integer)
+2024-11-29 10:53:06.828 DEBUG 26304 --- [XNIO-4 task-137] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==>  Preparing: SELECT id,name,limit_start_time,limit_end_time FROM t_exam_paper WHERE deleted=0 and paper_type= ? and grade_level=? ORDER BY id desc limit 5 
+2024-11-29 10:53:06.828 DEBUG 26304 --- [XNIO-4 task-136] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:53:06.828 DEBUG 26304 --- [XNIO-4 task-137] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==> Parameters: 1(Integer), 1(Integer)
+2024-11-29 10:53:06.828 DEBUG 26304 --- [XNIO-4 task-136] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:53:06.829 DEBUG 26304 --- [XNIO-4 task-138] r.c.m.x.r.T.getByGradeLevel              : <==      Total: 0
+2024-11-29 10:53:06.829 DEBUG 26304 --- [XNIO-4 task-137] r.c.m.x.r.ExamPaperMapper.indexPaper     : <==      Total: 0
+2024-11-29 10:53:06.830 DEBUG 26304 --- [XNIO-4 task-137] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==>  Preparing: SELECT id,name,limit_start_time,limit_end_time FROM t_exam_paper WHERE deleted=0 and paper_type= ? and grade_level=? and ? between limit_start_time and limit_end_time ORDER BY id desc limit 5 
+2024-11-29 10:53:06.830 DEBUG 26304 --- [XNIO-4 task-137] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==> Parameters: 4(Integer), 1(Integer), 2024-11-29 10:53:06.829(Timestamp)
+2024-11-29 10:53:06.832 DEBUG 26304 --- [XNIO-4 task-136] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:53:06.833 DEBUG 26304 --- [XNIO-4 task-137] r.c.m.x.r.ExamPaperMapper.indexPaper     : <==      Total: 0
+2024-11-29 10:53:20.068 DEBUG 26304 --- [XNIO-4 task-139] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:53:20.070 DEBUG 26304 --- [XNIO-4 task-139] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: admin(String)
+2024-11-29 10:53:20.071 DEBUG 26304 --- [XNIO-4 task-139] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:53:20.075 DEBUG 26304 --- [XNIO-4 task-139] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:53:20.077 DEBUG 26304 --- [XNIO-4 task-139] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: admin(String)
+2024-11-29 10:53:20.078 DEBUG 26304 --- [XNIO-4 task-139] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:53:20.079 DEBUG 26304 --- [XNIO-4 task-139] r.c.m.x.r.U.insertSelective              : ==>  Preparing: insert into t_user_event_log ( user_id, user_name, real_name, content, create_time ) values ( ?, ?, ?, ?, ? ) 
+2024-11-29 10:53:20.080 DEBUG 26304 --- [XNIO-4 task-139] r.c.m.x.r.U.insertSelective              : ==> Parameters: 2(Integer), admin(String), 管理员(String), admin 登录了学之思开源考试系统(String), 2024-11-29 10:53:20.078(Timestamp)
+2024-11-29 10:53:20.093 DEBUG 26304 --- [XNIO-4 task-139] r.c.m.x.r.U.insertSelective              : <==    Updates: 1
+2024-11-29 10:53:26.182 DEBUG 26304 --- [XNIO-4 task-144] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:53:26.184 DEBUG 26304 --- [XNIO-4 task-144] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:53:26.185 DEBUG 26304 --- [XNIO-4 task-144] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:53:26.189 DEBUG 26304 --- [XNIO-4 task-144] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:53:26.190 DEBUG 26304 --- [XNIO-4 task-144] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:53:26.192 DEBUG 26304 --- [XNIO-4 task-144] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:53:26.193 DEBUG 26304 --- [XNIO-4 task-144] r.c.m.x.r.U.insertSelective              : ==>  Preparing: insert into t_user_event_log ( user_id, user_name, real_name, content, create_time ) values ( ?, ?, ?, ?, ? ) 
+2024-11-29 10:53:26.193 DEBUG 26304 --- [XNIO-4 task-144] r.c.m.x.r.U.insertSelective              : ==> Parameters: 1(Integer), student(String), 学生(String), student 登录了学之思开源考试系统(String), 2024-11-29 10:53:26.192(Timestamp)
+2024-11-29 10:53:26.223 DEBUG 26304 --- [XNIO-4 task-144] r.c.m.x.r.U.insertSelective              : <==    Updates: 1
+2024-11-29 10:53:26.575 DEBUG 26304 --- [XNIO-4 task-146] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:53:26.576 DEBUG 26304 --- [XNIO-4 task-146] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:53:26.576 DEBUG 26304 --- [XNIO-4 task-145] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:53:26.577 DEBUG 26304 --- [XNIO-4 task-145] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:53:26.577 DEBUG 26304 --- [XNIO-4 task-146] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:53:26.577 DEBUG 26304 --- [XNIO-4 task-145] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:53:26.577 DEBUG 26304 --- [XNIO-4 task-146] r.c.m.x.r.MessageUserMapper.unReadCount  : ==>  Preparing: select count(*) from t_message_user where readed='f' and receive_user_id = ? 
+2024-11-29 10:53:26.578 DEBUG 26304 --- [XNIO-4 task-146] r.c.m.x.r.MessageUserMapper.unReadCount  : ==> Parameters: 1(Integer)
+2024-11-29 10:53:26.582 DEBUG 26304 --- [XNIO-4 task-146] r.c.m.x.r.MessageUserMapper.unReadCount  : <==      Total: 1
+2024-11-29 10:53:26.587 DEBUG 26304 --- [XNIO-4 task-147] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:53:26.587 DEBUG 26304 --- [XNIO-4 task-147] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:53:26.589 DEBUG 26304 --- [XNIO-4 task-148] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:53:26.589 DEBUG 26304 --- [XNIO-4 task-148] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:53:26.590 DEBUG 26304 --- [XNIO-4 task-147] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:53:26.591 DEBUG 26304 --- [XNIO-4 task-148] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:53:26.591 DEBUG 26304 --- [XNIO-4 task-147] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==>  Preparing: SELECT id,name,limit_start_time,limit_end_time FROM t_exam_paper WHERE deleted=0 and paper_type= ? and grade_level=? ORDER BY id desc limit 5 
+2024-11-29 10:53:26.591 DEBUG 26304 --- [XNIO-4 task-147] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==> Parameters: 1(Integer), 1(Integer)
+2024-11-29 10:53:26.591 DEBUG 26304 --- [XNIO-4 task-148] r.c.m.x.r.T.getByGradeLevel              : ==>  Preparing: select id, title, grade_level, frame_text_content_id, create_user, create_time, deleted, create_user_name from t_task_exam where deleted=0 and grade_level = ? 
+2024-11-29 10:53:26.591 DEBUG 26304 --- [XNIO-4 task-148] r.c.m.x.r.T.getByGradeLevel              : ==> Parameters: 1(Integer)
+2024-11-29 10:53:26.592 DEBUG 26304 --- [XNIO-4 task-147] r.c.m.x.r.ExamPaperMapper.indexPaper     : <==      Total: 0
+2024-11-29 10:53:26.592 DEBUG 26304 --- [XNIO-4 task-148] r.c.m.x.r.T.getByGradeLevel              : <==      Total: 0
+2024-11-29 10:53:26.596 DEBUG 26304 --- [XNIO-4 task-147] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==>  Preparing: SELECT id,name,limit_start_time,limit_end_time FROM t_exam_paper WHERE deleted=0 and paper_type= ? and grade_level=? and ? between limit_start_time and limit_end_time ORDER BY id desc limit 5 
+2024-11-29 10:53:26.596 DEBUG 26304 --- [XNIO-4 task-147] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==> Parameters: 4(Integer), 1(Integer), 2024-11-29 10:53:26.594(Timestamp)
+2024-11-29 10:53:26.597 DEBUG 26304 --- [XNIO-4 task-147] r.c.m.x.r.ExamPaperMapper.indexPaper     : <==      Total: 0
+2024-11-29 10:53:44.975 DEBUG 26304 --- [XNIO-4 task-150] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:53:44.975 DEBUG 26304 --- [XNIO-4 task-151] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:53:44.976 DEBUG 26304 --- [XNIO-4 task-151] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:53:44.976 DEBUG 26304 --- [XNIO-4 task-150] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:53:44.978 DEBUG 26304 --- [XNIO-4 task-151] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:53:44.978 DEBUG 26304 --- [XNIO-4 task-150] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:53:44.978 DEBUG 26304 --- [XNIO-4 task-150] r.c.m.x.r.MessageUserMapper.unReadCount  : ==>  Preparing: select count(*) from t_message_user where readed='f' and receive_user_id = ? 
+2024-11-29 10:53:44.978 DEBUG 26304 --- [XNIO-4 task-150] r.c.m.x.r.MessageUserMapper.unReadCount  : ==> Parameters: 1(Integer)
+2024-11-29 10:53:44.979 DEBUG 26304 --- [XNIO-4 task-153] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:53:44.980 DEBUG 26304 --- [XNIO-4 task-153] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:53:44.980 DEBUG 26304 --- [XNIO-4 task-150] r.c.m.x.r.MessageUserMapper.unReadCount  : <==      Total: 1
+2024-11-29 10:53:44.981 DEBUG 26304 --- [XNIO-4 task-153] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:53:44.982 DEBUG 26304 --- [XNIO-4 task-153] r.c.m.x.r.T.getByGradeLevel              : ==>  Preparing: select id, title, grade_level, frame_text_content_id, create_user, create_time, deleted, create_user_name from t_task_exam where deleted=0 and grade_level = ? 
+2024-11-29 10:53:44.982 DEBUG 26304 --- [XNIO-4 task-152] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:53:44.982 DEBUG 26304 --- [XNIO-4 task-153] r.c.m.x.r.T.getByGradeLevel              : ==> Parameters: 1(Integer)
+2024-11-29 10:53:44.982 DEBUG 26304 --- [XNIO-4 task-152] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:53:44.983 DEBUG 26304 --- [XNIO-4 task-153] r.c.m.x.r.T.getByGradeLevel              : <==      Total: 0
+2024-11-29 10:53:44.983 DEBUG 26304 --- [XNIO-4 task-152] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:53:44.984 DEBUG 26304 --- [XNIO-4 task-152] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==>  Preparing: SELECT id,name,limit_start_time,limit_end_time FROM t_exam_paper WHERE deleted=0 and paper_type= ? and grade_level=? ORDER BY id desc limit 5 
+2024-11-29 10:53:44.984 DEBUG 26304 --- [XNIO-4 task-152] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==> Parameters: 1(Integer), 1(Integer)
+2024-11-29 10:53:44.985 DEBUG 26304 --- [XNIO-4 task-152] r.c.m.x.r.ExamPaperMapper.indexPaper     : <==      Total: 0
+2024-11-29 10:53:44.987 DEBUG 26304 --- [XNIO-4 task-152] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==>  Preparing: SELECT id,name,limit_start_time,limit_end_time FROM t_exam_paper WHERE deleted=0 and paper_type= ? and grade_level=? and ? between limit_start_time and limit_end_time ORDER BY id desc limit 5 
+2024-11-29 10:53:44.987 DEBUG 26304 --- [XNIO-4 task-152] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==> Parameters: 4(Integer), 1(Integer), 2024-11-29 10:53:44.986(Timestamp)
+2024-11-29 10:53:44.988 DEBUG 26304 --- [XNIO-4 task-152] r.c.m.x.r.ExamPaperMapper.indexPaper     : <==      Total: 0
+2024-11-29 10:54:08.923 DEBUG 26304 --- [XNIO-4 task-158] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:54:08.923 DEBUG 26304 --- [XNIO-4 task-158] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: admin(String)
+2024-11-29 10:54:08.924 DEBUG 26304 --- [XNIO-4 task-158] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:54:08.928 DEBUG 26304 --- [XNIO-4 task-158] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:54:08.928 DEBUG 26304 --- [XNIO-4 task-158] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: admin(String)
+2024-11-29 10:54:08.929 DEBUG 26304 --- [XNIO-4 task-158] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:54:08.930 DEBUG 26304 --- [XNIO-4 task-158] r.c.m.x.r.U.insertSelective              : ==>  Preparing: insert into t_user_event_log ( user_id, user_name, real_name, content, create_time ) values ( ?, ?, ?, ?, ? ) 
+2024-11-29 10:54:08.931 DEBUG 26304 --- [XNIO-4 task-158] r.c.m.x.r.U.insertSelective              : ==> Parameters: 2(Integer), admin(String), 管理员(String), admin 登录了学之思开源考试系统(String), 2024-11-29 10:54:08.929(Timestamp)
+2024-11-29 10:54:08.962 DEBUG 26304 --- [XNIO-4 task-158] r.c.m.x.r.U.insertSelective              : <==    Updates: 1
+2024-11-29 10:54:09.008 DEBUG 26304 --- [XNIO-4 task-159] r.c.m.x.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper where deleted=0 
+2024-11-29 10:54:09.008 DEBUG 26304 --- [XNIO-4 task-159] r.c.m.x.r.E.selectAllCount               : ==> Parameters: 
+2024-11-29 10:54:09.009 DEBUG 26304 --- [XNIO-4 task-159] r.c.m.x.r.E.selectAllCount               : <==      Total: 1
+2024-11-29 10:54:09.009 DEBUG 26304 --- [XNIO-4 task-159] r.c.m.x.r.QuestionMapper.selectAllCount  : ==>  Preparing: SELECT count(*) from t_question where deleted=0 
+2024-11-29 10:54:09.009 DEBUG 26304 --- [XNIO-4 task-159] r.c.m.x.r.QuestionMapper.selectAllCount  : ==> Parameters: 
+2024-11-29 10:54:09.011 DEBUG 26304 --- [XNIO-4 task-159] r.c.m.x.r.QuestionMapper.selectAllCount  : <==      Total: 1
+2024-11-29 10:54:09.011 DEBUG 26304 --- [XNIO-4 task-159] r.c.m.x.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper_answer 
+2024-11-29 10:54:09.011 DEBUG 26304 --- [XNIO-4 task-159] r.c.m.x.r.E.selectAllCount               : ==> Parameters: 
+2024-11-29 10:54:09.012 DEBUG 26304 --- [XNIO-4 task-159] r.c.m.x.r.E.selectAllCount               : <==      Total: 1
+2024-11-29 10:54:09.012 DEBUG 26304 --- [XNIO-4 task-159] r.c.m.x.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper_question_customer_answer 
+2024-11-29 10:54:09.012 DEBUG 26304 --- [XNIO-4 task-159] r.c.m.x.r.E.selectAllCount               : ==> Parameters: 
+2024-11-29 10:54:09.013 DEBUG 26304 --- [XNIO-4 task-159] r.c.m.x.r.E.selectAllCount               : <==      Total: 1
+2024-11-29 10:54:09.016 DEBUG 26304 --- [XNIO-4 task-159] r.c.m.x.r.U.selectCountByDate            : ==>  Preparing: SELECT create_time as name,COUNT(create_time) as value from ( SELECT DATE_FORMAT(create_time,'%Y-%m-%d') as create_time from t_user_event_log WHERE create_time between ? and ? ) a GROUP BY create_time 
+2024-11-29 10:54:09.016 DEBUG 26304 --- [XNIO-4 task-159] r.c.m.x.r.U.selectCountByDate            : ==> Parameters: 2024-11-01 00:00:00.0(Timestamp), 2024-11-30 23:59:59.0(Timestamp)
+2024-11-29 10:54:09.017 DEBUG 26304 --- [XNIO-4 task-159] r.c.m.x.r.U.selectCountByDate            : <==      Total: 2
+2024-11-29 10:54:09.018 DEBUG 26304 --- [XNIO-4 task-159] r.c.m.x.r.E.selectCountByDate            : ==>  Preparing: SELECT create_time as name,COUNT(create_time) as value from ( SELECT DATE_FORMAT(create_time,'%Y-%m-%d') as create_time from t_exam_paper_question_customer_answer WHERE create_time between ? and ? ) a GROUP BY create_time 
+2024-11-29 10:54:09.018 DEBUG 26304 --- [XNIO-4 task-159] r.c.m.x.r.E.selectCountByDate            : ==> Parameters: 2024-11-01 00:00:00.0(Timestamp), 2024-11-30 23:59:59.0(Timestamp)
+2024-11-29 10:54:09.020 DEBUG 26304 --- [XNIO-4 task-159] r.c.m.x.r.E.selectCountByDate            : <==      Total: 0
+2024-11-29 10:56:51.020 DEBUG 26304 --- [XNIO-4 task-164] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:56:51.020 DEBUG 26304 --- [XNIO-4 task-164] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:56:51.022 DEBUG 26304 --- [XNIO-4 task-164] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:56:51.027 DEBUG 26304 --- [XNIO-4 task-164] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:56:51.027 DEBUG 26304 --- [XNIO-4 task-164] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:56:51.028 DEBUG 26304 --- [XNIO-4 task-164] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:56:51.029 DEBUG 26304 --- [XNIO-4 task-164] r.c.m.x.r.U.insertSelective              : ==>  Preparing: insert into t_user_event_log ( user_id, user_name, real_name, content, create_time ) values ( ?, ?, ?, ?, ? ) 
+2024-11-29 10:56:51.029 DEBUG 26304 --- [XNIO-4 task-164] r.c.m.x.r.U.insertSelective              : ==> Parameters: 1(Integer), student(String), 学生(String), student 登录了学之思开源考试系统(String), 2024-11-29 10:56:51.028(Timestamp)
+2024-11-29 10:56:51.059 DEBUG 26304 --- [XNIO-4 task-164] r.c.m.x.r.U.insertSelective              : <==    Updates: 1
+2024-11-29 10:56:51.261 DEBUG 26304 --- [XNIO-4 task-165] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:56:51.261 DEBUG 26304 --- [XNIO-4 task-165] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:56:51.262 DEBUG 26304 --- [XNIO-4 task-165] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:56:51.263 DEBUG 26304 --- [XNIO-4 task-165] r.c.m.x.r.MessageUserMapper.unReadCount  : ==>  Preparing: select count(*) from t_message_user where readed='f' and receive_user_id = ? 
+2024-11-29 10:56:51.263 DEBUG 26304 --- [XNIO-4 task-165] r.c.m.x.r.MessageUserMapper.unReadCount  : ==> Parameters: 1(Integer)
+2024-11-29 10:56:51.263 DEBUG 26304 --- [XNIO-4 task-165] r.c.m.x.r.MessageUserMapper.unReadCount  : <==      Total: 1
+2024-11-29 10:56:51.408 DEBUG 26304 --- [XNIO-4 task-167] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:56:51.408 DEBUG 26304 --- [XNIO-4 task-168] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:56:51.408 DEBUG 26304 --- [XNIO-4 task-168] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:56:51.408 DEBUG 26304 --- [XNIO-4 task-167] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:56:51.409 DEBUG 26304 --- [XNIO-4 task-166] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:56:51.409 DEBUG 26304 --- [XNIO-4 task-166] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:56:51.410 DEBUG 26304 --- [XNIO-4 task-168] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:56:51.410 DEBUG 26304 --- [XNIO-4 task-166] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:56:51.410 DEBUG 26304 --- [XNIO-4 task-167] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:56:51.410 DEBUG 26304 --- [XNIO-4 task-168] r.c.m.x.r.T.getByGradeLevel              : ==>  Preparing: select id, title, grade_level, frame_text_content_id, create_user, create_time, deleted, create_user_name from t_task_exam where deleted=0 and grade_level = ? 
+2024-11-29 10:56:51.410 DEBUG 26304 --- [XNIO-4 task-167] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==>  Preparing: SELECT id,name,limit_start_time,limit_end_time FROM t_exam_paper WHERE deleted=0 and paper_type= ? and grade_level=? ORDER BY id desc limit 5 
+2024-11-29 10:56:51.412 DEBUG 26304 --- [XNIO-4 task-167] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==> Parameters: 1(Integer), 1(Integer)
+2024-11-29 10:56:51.412 DEBUG 26304 --- [XNIO-4 task-168] r.c.m.x.r.T.getByGradeLevel              : ==> Parameters: 1(Integer)
+2024-11-29 10:56:51.414 DEBUG 26304 --- [XNIO-4 task-168] r.c.m.x.r.T.getByGradeLevel              : <==      Total: 0
+2024-11-29 10:56:51.414 DEBUG 26304 --- [XNIO-4 task-167] r.c.m.x.r.ExamPaperMapper.indexPaper     : <==      Total: 0
+2024-11-29 10:56:51.415 DEBUG 26304 --- [XNIO-4 task-167] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==>  Preparing: SELECT id,name,limit_start_time,limit_end_time FROM t_exam_paper WHERE deleted=0 and paper_type= ? and grade_level=? and ? between limit_start_time and limit_end_time ORDER BY id desc limit 5 
+2024-11-29 10:56:51.415 DEBUG 26304 --- [XNIO-4 task-167] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==> Parameters: 4(Integer), 1(Integer), 2024-11-29 10:56:51.414(Timestamp)
+2024-11-29 10:56:51.416 DEBUG 26304 --- [XNIO-4 task-167] r.c.m.x.r.ExamPaperMapper.indexPaper     : <==      Total: 0
+2024-11-29 10:57:09.201 DEBUG 26304 --- [XNIO-4 task-171] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:57:09.201 DEBUG 26304 --- [XNIO-4 task-169] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:57:09.201 DEBUG 26304 --- [XNIO-4 task-171] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:57:09.201 DEBUG 26304 --- [XNIO-4 task-169] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:57:09.202 DEBUG 26304 --- [XNIO-4 task-171] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:57:09.202 DEBUG 26304 --- [XNIO-4 task-169] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:57:09.202 DEBUG 26304 --- [XNIO-4 task-169] r.c.m.x.r.MessageUserMapper.unReadCount  : ==>  Preparing: select count(*) from t_message_user where readed='f' and receive_user_id = ? 
+2024-11-29 10:57:09.203 DEBUG 26304 --- [XNIO-4 task-169] r.c.m.x.r.MessageUserMapper.unReadCount  : ==> Parameters: 1(Integer)
+2024-11-29 10:57:09.203 DEBUG 26304 --- [XNIO-4 task-169] r.c.m.x.r.MessageUserMapper.unReadCount  : <==      Total: 1
+2024-11-29 10:57:09.209 DEBUG 26304 --- [XNIO-4 task-170] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:57:09.209 DEBUG 26304 --- [XNIO-4 task-170] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:57:09.210 DEBUG 26304 --- [XNIO-4 task-170] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:57:09.211 DEBUG 26304 --- [XNIO-4 task-170] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==>  Preparing: SELECT id,name,limit_start_time,limit_end_time FROM t_exam_paper WHERE deleted=0 and paper_type= ? and grade_level=? ORDER BY id desc limit 5 
+2024-11-29 10:57:09.211 DEBUG 26304 --- [XNIO-4 task-170] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==> Parameters: 1(Integer), 1(Integer)
+2024-11-29 10:57:09.211 DEBUG 26304 --- [XNIO-4 task-170] r.c.m.x.r.ExamPaperMapper.indexPaper     : <==      Total: 0
+2024-11-29 10:57:09.212 DEBUG 26304 --- [XNIO-4 task-170] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==>  Preparing: SELECT id,name,limit_start_time,limit_end_time FROM t_exam_paper WHERE deleted=0 and paper_type= ? and grade_level=? and ? between limit_start_time and limit_end_time ORDER BY id desc limit 5 
+2024-11-29 10:57:09.212 DEBUG 26304 --- [XNIO-4 task-170] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==> Parameters: 4(Integer), 1(Integer), 2024-11-29 10:57:09.211(Timestamp)
+2024-11-29 10:57:09.212 DEBUG 26304 --- [XNIO-4 task-170] r.c.m.x.r.ExamPaperMapper.indexPaper     : <==      Total: 0
+2024-11-29 10:57:09.215 DEBUG 26304 --- [XNIO-4 task-172] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:57:09.215 DEBUG 26304 --- [XNIO-4 task-172] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:57:09.217 DEBUG 26304 --- [XNIO-4 task-172] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:57:09.218 DEBUG 26304 --- [XNIO-4 task-172] r.c.m.x.r.T.getByGradeLevel              : ==>  Preparing: select id, title, grade_level, frame_text_content_id, create_user, create_time, deleted, create_user_name from t_task_exam where deleted=0 and grade_level = ? 
+2024-11-29 10:57:09.218 DEBUG 26304 --- [XNIO-4 task-172] r.c.m.x.r.T.getByGradeLevel              : ==> Parameters: 1(Integer)
+2024-11-29 10:57:09.219 DEBUG 26304 --- [XNIO-4 task-172] r.c.m.x.r.T.getByGradeLevel              : <==      Total: 0
+2024-11-29 10:57:14.861 DEBUG 26304 --- [XNIO-4 task-173] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:57:14.862 DEBUG 26304 --- [XNIO-4 task-173] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:57:14.863 DEBUG 26304 --- [XNIO-4 task-173] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:57:14.864 DEBUG 26304 --- [XNIO-4 task-173] r.c.m.x.r.MessageUserMapper.unReadCount  : ==>  Preparing: select count(*) from t_message_user where readed='f' and receive_user_id = ? 
+2024-11-29 10:57:14.864 DEBUG 26304 --- [XNIO-4 task-173] r.c.m.x.r.MessageUserMapper.unReadCount  : ==> Parameters: 1(Integer)
+2024-11-29 10:57:14.865 DEBUG 26304 --- [XNIO-4 task-173] r.c.m.x.r.MessageUserMapper.unReadCount  : <==      Total: 1
+2024-11-29 10:57:14.903 DEBUG 26304 --- [XNIO-4 task-174] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:57:14.904 DEBUG 26304 --- [XNIO-4 task-174] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:57:14.905 DEBUG 26304 --- [XNIO-4 task-174] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:57:14.952 DEBUG 26304 --- [XNIO-4 task-175] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:57:14.953 DEBUG 26304 --- [XNIO-4 task-175] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:57:14.953 DEBUG 26304 --- [XNIO-4 task-176] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:57:14.953 DEBUG 26304 --- [XNIO-4 task-176] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:57:14.954 DEBUG 26304 --- [XNIO-4 task-176] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:57:14.954 DEBUG 26304 --- [XNIO-4 task-175] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:57:14.955 DEBUG 26304 --- [XNIO-4 task-176] r.c.m.x.r.T.getByGradeLevel              : ==>  Preparing: select id, title, grade_level, frame_text_content_id, create_user, create_time, deleted, create_user_name from t_task_exam where deleted=0 and grade_level = ? 
+2024-11-29 10:57:14.955 DEBUG 26304 --- [XNIO-4 task-176] r.c.m.x.r.T.getByGradeLevel              : ==> Parameters: 1(Integer)
+2024-11-29 10:57:14.955 DEBUG 26304 --- [XNIO-4 task-175] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==>  Preparing: SELECT id,name,limit_start_time,limit_end_time FROM t_exam_paper WHERE deleted=0 and paper_type= ? and grade_level=? ORDER BY id desc limit 5 
+2024-11-29 10:57:14.955 DEBUG 26304 --- [XNIO-4 task-175] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==> Parameters: 1(Integer), 1(Integer)
+2024-11-29 10:57:14.955 DEBUG 26304 --- [XNIO-4 task-176] r.c.m.x.r.T.getByGradeLevel              : <==      Total: 0
+2024-11-29 10:57:14.955 DEBUG 26304 --- [XNIO-4 task-175] r.c.m.x.r.ExamPaperMapper.indexPaper     : <==      Total: 0
+2024-11-29 10:57:14.956 DEBUG 26304 --- [XNIO-4 task-175] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==>  Preparing: SELECT id,name,limit_start_time,limit_end_time FROM t_exam_paper WHERE deleted=0 and paper_type= ? and grade_level=? and ? between limit_start_time and limit_end_time ORDER BY id desc limit 5 
+2024-11-29 10:57:14.956 DEBUG 26304 --- [XNIO-4 task-175] r.c.m.x.r.ExamPaperMapper.indexPaper     : ==> Parameters: 4(Integer), 1(Integer), 2024-11-29 10:57:14.956(Timestamp)
+2024-11-29 10:57:14.958 DEBUG 26304 --- [XNIO-4 task-175] r.c.m.x.r.ExamPaperMapper.indexPaper     : <==      Total: 0
+2024-11-29 10:57:17.634 DEBUG 26304 --- [XNIO-4 task-177] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:57:17.634 DEBUG 26304 --- [XNIO-4 task-177] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:57:17.636 DEBUG 26304 --- [XNIO-4 task-177] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:57:17.638 DEBUG 26304 --- [XNIO-4 task-177] r.c.m.x.r.E.studentPage_COUNT            : ==>  Preparing: SELECT count(0) FROM t_exam_paper_question_customer_answer WHERE do_right = FALSE AND create_user = ? 
+2024-11-29 10:57:17.638 DEBUG 26304 --- [XNIO-4 task-177] r.c.m.x.r.E.studentPage_COUNT            : ==> Parameters: 1(Integer)
+2024-11-29 10:57:17.638 DEBUG 26304 --- [XNIO-4 task-177] r.c.m.x.r.E.studentPage_COUNT            : <==      Total: 1
+2024-11-29 10:57:19.717 DEBUG 26304 --- [XNIO-4 task-178] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-11-29 10:57:19.717 DEBUG 26304 --- [XNIO-4 task-178] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: student(String)
+2024-11-29 10:57:19.718 DEBUG 26304 --- [XNIO-4 task-178] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-11-29 10:57:19.719 DEBUG 26304 --- [XNIO-4 task-178] r.c.m.x.r.U.insertSelective              : ==>  Preparing: insert into t_user_event_log ( user_id, user_name, real_name, content, create_time ) values ( ?, ?, ?, ?, ? ) 
+2024-11-29 10:57:19.720 DEBUG 26304 --- [XNIO-4 task-178] r.c.m.x.r.U.insertSelective              : ==> Parameters: 1(Integer), student(String), 学生(String), student 登出了学之思开源考试系统(String), 2024-11-29 10:57:19.719(Timestamp)
+2024-11-29 10:57:19.747 DEBUG 26304 --- [XNIO-4 task-178] r.c.m.x.r.U.insertSelective              : <==    Updates: 1
+2024-11-29 12:52:43.033  WARN 26304 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=1h21m2s382ms863µs500ns).
+2024-11-29 12:53:16.230  INFO 26304 --- [Thread-39] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-11-29 12:53:16.241  INFO 26304 --- [Thread-39] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-11-29 12:53:16.241  INFO 26304 --- [Thread-39] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mindskip.xzs.repository.CourseUnitMapper">
+
+    <insert id="insertUnit" parameterType="com.mindskip.xzs.domain.CourseUnit">
+        INSERT INTO course_unit
+        (title, order_num, course_id)
+        VALUES
+        (#{title}, #{orderNum}, #{course.id})
+        <selectKey resultType="java.lang.Long" order="AFTER" keyProperty="id">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+    </insert>
+    <insert id="insertResource" parameterType="com.mindskip.xzs.domain.CourseUnit">
+        INSERT INTO course_resource
+            (unit_id, original_name, storage_path, file_type)
+        VALUES
+            (#{unit.id}, #{originalName}, #{storagePath}, #{fileType})
+    </insert>
+    <resultMap id="CourseUnitResultMap" type="com.mindskip.xzs.domain.CourseUnit">
+        <id property="id" column="unit_id"/>
+        <collection property="resources" ofType="com.mindskip.xzs.domain.CourseResource">
+            <id property="id" column="resource_id"/>
+            <result property="originalName" column="original_name"/>
+        </collection>
+    </resultMap>
+</mapper>

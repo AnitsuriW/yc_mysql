@@ -1,0 +1,582 @@
+2024-12-06 11:01:32.254  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Starting XzsApplication on acerro with PID 27980 (D:\Workshop\week19\hdt\week18\xzs-mysql-master\source\xzs\target\classes started by 86190 in D:\Workshop\week19\hdt\week18\xzs-mysql-master\source\xzs)
+2024-12-06 11:01:32.257  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : The following profiles are active: dev
+2024-12-06 11:01:32.340  INFO 27980 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-06 11:01:32.340  INFO 27980 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-06 11:01:33.890  WARN 27980 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-12-06 11:01:33.917  INFO 27980 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-12-06 11:01:33.917  INFO 27980 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1569 ms
+2024-12-06 11:01:34.982  INFO 27980 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6fb65289, org.springframework.security.web.context.SecurityContextPersistenceFilter@2961f6d9, org.springframework.security.web.header.HeaderWriterFilter@2e76b5cb, org.springframework.web.filter.CorsFilter@26b61524, org.springframework.security.web.authentication.logout.LogoutFilter@f5a2f71, com.mindskip.xzs.configuration.spring.security.RestLoginAuthenticationFilter@29bad842, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1fd99c0e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@825819a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@673e1063, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@3f7d7b64, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@17bdd634, org.springframework.security.web.session.SessionManagementFilter@538b26f2, org.springframework.security.web.access.ExceptionTranslationFilter@aed3aca, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@72384b9e]
+2024-12-06 11:01:35.381  INFO 27980 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-06 11:01:35.443  INFO 27980 --- [restartedMain] org.xnio                                 : XNIO version 3.3.8.Final
+2024-12-06 11:01:35.456  INFO 27980 --- [restartedMain] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2024-12-06 11:01:35.522  INFO 27980 --- [restartedMain] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8000 (http) with context path ''
+2024-12-06 11:01:35.526  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Started XzsApplication in 3.777 seconds (JVM running for 4.937)
+2024-12-06 11:01:46.030  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Starting XzsApplication on acerro with PID 27980 (D:\Workshop\week19\hdt\week18\xzs-mysql-master\source\xzs\target\classes started by 86190 in D:\Workshop\week19\hdt\week18\xzs-mysql-master\source\xzs)
+2024-12-06 11:01:46.030  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : The following profiles are active: dev
+2024-12-06 11:01:46.033  INFO 27980 --- [restartedMain] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class com.mindskip.xzs.XzsApplication: java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionProxy
+2024-12-06 11:01:46.045 ERROR 27980 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionProxy
+	at sun.reflect.annotation.AnnotationParser.parseClassArray(AnnotationParser.java:724)
+	at sun.reflect.annotation.AnnotationParser.parseArray(AnnotationParser.java:531)
+	at sun.reflect.annotation.AnnotationParser.parseMemberValue(AnnotationParser.java:355)
+	at sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:286)
+	at sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:120)
+	at sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:72)
+	at java.lang.Class.createAnnotationData(Class.java:3521)
+	at java.lang.Class.annotationData(Class.java:3510)
+	at java.lang.Class.getAnnotations(Class.java:3446)
+	at org.springframework.core.type.StandardAnnotationMetadata.<init>(StandardAnnotationMetadata.java:70)
+	at org.springframework.beans.factory.annotation.AnnotatedGenericBeanDefinition.<init>(AnnotatedGenericBeanDefinition.java:58)
+	at org.springframework.context.annotation.AnnotatedBeanDefinitionReader.doRegisterBean(AnnotatedBeanDefinitionReader.java:216)
+	at org.springframework.context.annotation.AnnotatedBeanDefinitionReader.registerBean(AnnotatedBeanDefinitionReader.java:145)
+	at org.springframework.context.annotation.AnnotatedBeanDefinitionReader.register(AnnotatedBeanDefinitionReader.java:135)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:156)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:135)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:127)
+	at org.springframework.boot.SpringApplication.load(SpringApplication.java:686)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:384)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202)
+	at com.mindskip.xzs.XzsApplication.main(XzsApplication.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+
+2024-12-06 11:01:51.334  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Starting XzsApplication on acerro with PID 27980 (D:\Workshop\week19\hdt\week18\xzs-mysql-master\source\xzs\target\classes started by 86190 in D:\Workshop\week19\hdt\week18\xzs-mysql-master\source\xzs)
+2024-12-06 11:01:51.334  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : The following profiles are active: dev
+2024-12-06 11:01:52.162  WARN 27980 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-12-06 11:01:52.163  INFO 27980 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-12-06 11:01:52.163  INFO 27980 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 824 ms
+2024-12-06 11:01:52.648  INFO 27980 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6f7b8640, org.springframework.security.web.context.SecurityContextPersistenceFilter@4eb32898, org.springframework.security.web.header.HeaderWriterFilter@7efc649a, org.springframework.web.filter.CorsFilter@6a2ba132, org.springframework.security.web.authentication.logout.LogoutFilter@5f390a51, com.mindskip.xzs.configuration.spring.security.RestLoginAuthenticationFilter@6e18beee, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@48973975, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@b0be0a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1d75c232, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@74afd72e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1b866193, org.springframework.security.web.session.SessionManagementFilter@72a61518, org.springframework.security.web.access.ExceptionTranslationFilter@21dde216, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@762e7f72]
+2024-12-06 11:01:52.898  INFO 27980 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-06 11:01:52.937  INFO 27980 --- [restartedMain] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8000 (http) with context path ''
+2024-12-06 11:01:52.938  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Started XzsApplication in 1.646 seconds (JVM running for 22.349)
+2024-12-06 11:01:52.940  INFO 27980 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-12-06 11:02:42.371  INFO 27980 --- [XNIO-2 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-06 11:02:42.372  INFO 27980 --- [XNIO-2 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-06 11:02:42.389  INFO 27980 --- [XNIO-2 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2024-12-06 11:02:45.072  INFO 27980 --- [XNIO-2 task-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-06 11:02:45.264  INFO 27980 --- [XNIO-2 task-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-06 11:02:45.273 DEBUG 27980 --- [XNIO-2 task-2] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-12-06 11:02:45.308 DEBUG 27980 --- [XNIO-2 task-2] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: admin(String)
+2024-12-06 11:02:45.352 DEBUG 27980 --- [XNIO-2 task-2] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-12-06 11:02:46.163 DEBUG 27980 --- [XNIO-2 task-2] r.c.m.x.r.UserMapper.getUserByUserName   : ==>  Preparing: select id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id from t_user where deleted=0 and user_name=? limit 1 
+2024-12-06 11:02:46.164 DEBUG 27980 --- [XNIO-2 task-2] r.c.m.x.r.UserMapper.getUserByUserName   : ==> Parameters: admin(String)
+2024-12-06 11:02:46.166 DEBUG 27980 --- [XNIO-2 task-2] r.c.m.x.r.UserMapper.getUserByUserName   : <==      Total: 1
+2024-12-06 11:02:46.189 DEBUG 27980 --- [XNIO-2 task-2] r.c.m.x.r.U.insertSelective              : ==>  Preparing: insert into t_user_event_log ( user_id, user_name, real_name, content, create_time ) values ( ?, ?, ?, ?, ? ) 
+2024-12-06 11:02:46.191 DEBUG 27980 --- [XNIO-2 task-2] r.c.m.x.r.U.insertSelective              : ==> Parameters: 2(Integer), admin(String), 管理员(String), admin 登录了学之思开源考试系统(String), 2024-12-06 11:02:46.167(Timestamp)
+2024-12-06 11:02:46.208 DEBUG 27980 --- [XNIO-2 task-2] r.c.m.x.r.U.insertSelective              : <==    Updates: 1
+2024-12-06 11:02:46.304 DEBUG 27980 --- [XNIO-2 task-3] r.c.m.x.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper where deleted=0 
+2024-12-06 11:02:46.304 DEBUG 27980 --- [XNIO-2 task-3] r.c.m.x.r.E.selectAllCount               : ==> Parameters: 
+2024-12-06 11:02:46.319 DEBUG 27980 --- [XNIO-2 task-3] r.c.m.x.r.E.selectAllCount               : <==      Total: 1
+2024-12-06 11:02:46.321 DEBUG 27980 --- [XNIO-2 task-3] r.c.m.x.r.QuestionMapper.selectAllCount  : ==>  Preparing: SELECT count(*) from t_question where deleted=0 
+2024-12-06 11:02:46.321 DEBUG 27980 --- [XNIO-2 task-3] r.c.m.x.r.QuestionMapper.selectAllCount  : ==> Parameters: 
+2024-12-06 11:02:46.334 DEBUG 27980 --- [XNIO-2 task-3] r.c.m.x.r.QuestionMapper.selectAllCount  : <==      Total: 1
+2024-12-06 11:02:46.335 DEBUG 27980 --- [XNIO-2 task-3] r.c.m.x.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper_answer 
+2024-12-06 11:02:46.336 DEBUG 27980 --- [XNIO-2 task-3] r.c.m.x.r.E.selectAllCount               : ==> Parameters: 
+2024-12-06 11:02:46.351 DEBUG 27980 --- [XNIO-2 task-3] r.c.m.x.r.E.selectAllCount               : <==      Total: 1
+2024-12-06 11:02:46.352 DEBUG 27980 --- [XNIO-2 task-3] r.c.m.x.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper_question_customer_answer 
+2024-12-06 11:02:46.352 DEBUG 27980 --- [XNIO-2 task-3] r.c.m.x.r.E.selectAllCount               : ==> Parameters: 
+2024-12-06 11:02:46.366 DEBUG 27980 --- [XNIO-2 task-3] r.c.m.x.r.E.selectAllCount               : <==      Total: 1
+2024-12-06 11:02:46.372 DEBUG 27980 --- [XNIO-2 task-3] r.c.m.x.r.U.selectCountByDate            : ==>  Preparing: SELECT create_time as name,COUNT(create_time) as value from ( SELECT DATE_FORMAT(create_time,'%Y-%m-%d') as create_time from t_user_event_log WHERE create_time between ? and ? ) a GROUP BY create_time 
+2024-12-06 11:02:46.374 DEBUG 27980 --- [XNIO-2 task-3] r.c.m.x.r.U.selectCountByDate            : ==> Parameters: 2024-12-01 00:00:00.0(Timestamp), 2024-12-31 23:59:59.0(Timestamp)
+2024-12-06 11:02:46.380 DEBUG 27980 --- [XNIO-2 task-3] r.c.m.x.r.U.selectCountByDate            : <==      Total: 5
+2024-12-06 11:02:46.383 DEBUG 27980 --- [XNIO-2 task-3] r.c.m.x.r.E.selectCountByDate            : ==>  Preparing: SELECT create_time as name,COUNT(create_time) as value from ( SELECT DATE_FORMAT(create_time,'%Y-%m-%d') as create_time from t_exam_paper_question_customer_answer WHERE create_time between ? and ? ) a GROUP BY create_time 
+2024-12-06 11:02:46.384 DEBUG 27980 --- [XNIO-2 task-3] r.c.m.x.r.E.selectCountByDate            : ==> Parameters: 2024-12-01 00:00:00.0(Timestamp), 2024-12-31 23:59:59.0(Timestamp)
+2024-12-06 11:02:46.385 DEBUG 27980 --- [XNIO-2 task-3] r.c.m.x.r.E.selectCountByDate            : <==      Total: 2
+2024-12-06 11:02:49.873 DEBUG 27980 --- [XNIO-2 task-4] r.c.m.x.r.UserMapper.userPage_COUNT      : ==>  Preparing: SELECT count(0) FROM t_user WHERE deleted = 0 AND role = ? 
+2024-12-06 11:02:49.873 DEBUG 27980 --- [XNIO-2 task-4] r.c.m.x.r.UserMapper.userPage_COUNT      : ==> Parameters: 1(Integer)
+2024-12-06 11:02:49.874 DEBUG 27980 --- [XNIO-2 task-4] r.c.m.x.r.UserMapper.userPage_COUNT      : <==      Total: 1
+2024-12-06 11:02:49.880 DEBUG 27980 --- [XNIO-2 task-4] r.c.m.x.repository.UserMapper.userPage   : ==>  Preparing: SELECT id, user_uuid, user_name, password, real_name, age, sex, birth_day, user_level, phone, role, status, image_path, create_time, modify_time, last_active_time, deleted, wx_open_id FROM t_user WHERE deleted = 0 AND role = ? order by id desc LIMIT ? 
+2024-12-06 11:02:49.880 DEBUG 27980 --- [XNIO-2 task-4] r.c.m.x.repository.UserMapper.userPage   : ==> Parameters: 1(Integer), 10(Integer)
+2024-12-06 11:02:49.889 DEBUG 27980 --- [XNIO-2 task-4] r.c.m.x.repository.UserMapper.userPage   : <==      Total: 1
+2024-12-06 11:04:05.418 DEBUG 27980 --- [XNIO-2 task-6] r.c.m.x.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper where deleted=0 
+2024-12-06 11:04:05.419 DEBUG 27980 --- [XNIO-2 task-6] r.c.m.x.r.E.selectAllCount               : ==> Parameters: 
+2024-12-06 11:04:05.421 DEBUG 27980 --- [XNIO-2 task-6] r.c.m.x.r.E.selectAllCount               : <==      Total: 1
+2024-12-06 11:04:05.422 DEBUG 27980 --- [XNIO-2 task-6] r.c.m.x.r.QuestionMapper.selectAllCount  : ==>  Preparing: SELECT count(*) from t_question where deleted=0 
+2024-12-06 11:04:05.422 DEBUG 27980 --- [XNIO-2 task-6] r.c.m.x.r.QuestionMapper.selectAllCount  : ==> Parameters: 
+2024-12-06 11:04:05.423 DEBUG 27980 --- [XNIO-2 task-6] r.c.m.x.r.QuestionMapper.selectAllCount  : <==      Total: 1
+2024-12-06 11:04:05.424 DEBUG 27980 --- [XNIO-2 task-6] r.c.m.x.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper_answer 
+2024-12-06 11:04:05.424 DEBUG 27980 --- [XNIO-2 task-6] r.c.m.x.r.E.selectAllCount               : ==> Parameters: 
+2024-12-06 11:04:05.428 DEBUG 27980 --- [XNIO-2 task-6] r.c.m.x.r.E.selectAllCount               : <==      Total: 1
+2024-12-06 11:04:05.430 DEBUG 27980 --- [XNIO-2 task-6] r.c.m.x.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper_question_customer_answer 
+2024-12-06 11:04:05.432 DEBUG 27980 --- [XNIO-2 task-6] r.c.m.x.r.E.selectAllCount               : ==> Parameters: 
+2024-12-06 11:04:05.435 DEBUG 27980 --- [XNIO-2 task-6] r.c.m.x.r.E.selectAllCount               : <==      Total: 1
+2024-12-06 11:04:05.437 DEBUG 27980 --- [XNIO-2 task-6] r.c.m.x.r.U.selectCountByDate            : ==>  Preparing: SELECT create_time as name,COUNT(create_time) as value from ( SELECT DATE_FORMAT(create_time,'%Y-%m-%d') as create_time from t_user_event_log WHERE create_time between ? and ? ) a GROUP BY create_time 
+2024-12-06 11:04:05.438 DEBUG 27980 --- [XNIO-2 task-6] r.c.m.x.r.U.selectCountByDate            : ==> Parameters: 2024-12-01 00:00:00.0(Timestamp), 2024-12-31 23:59:59.0(Timestamp)
+2024-12-06 11:04:05.440 DEBUG 27980 --- [XNIO-2 task-6] r.c.m.x.r.U.selectCountByDate            : <==      Total: 5
+2024-12-06 11:04:05.443 DEBUG 27980 --- [XNIO-2 task-6] r.c.m.x.r.E.selectCountByDate            : ==>  Preparing: SELECT create_time as name,COUNT(create_time) as value from ( SELECT DATE_FORMAT(create_time,'%Y-%m-%d') as create_time from t_exam_paper_question_customer_answer WHERE create_time between ? and ? ) a GROUP BY create_time 
+2024-12-06 11:04:05.444 DEBUG 27980 --- [XNIO-2 task-6] r.c.m.x.r.E.selectCountByDate            : ==> Parameters: 2024-12-01 00:00:00.0(Timestamp), 2024-12-31 23:59:59.0(Timestamp)
+2024-12-06 11:04:05.446 DEBUG 27980 --- [XNIO-2 task-6] r.c.m.x.r.E.selectCountByDate            : <==      Total: 2
+2024-12-06 11:04:53.119 DEBUG 27980 --- [XNIO-2 task-8] r.c.m.x.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper where deleted=0 
+2024-12-06 11:04:53.119 DEBUG 27980 --- [XNIO-2 task-8] r.c.m.x.r.E.selectAllCount               : ==> Parameters: 
+2024-12-06 11:04:53.120 DEBUG 27980 --- [XNIO-2 task-8] r.c.m.x.r.E.selectAllCount               : <==      Total: 1
+2024-12-06 11:04:53.121 DEBUG 27980 --- [XNIO-2 task-8] r.c.m.x.r.QuestionMapper.selectAllCount  : ==>  Preparing: SELECT count(*) from t_question where deleted=0 
+2024-12-06 11:04:53.121 DEBUG 27980 --- [XNIO-2 task-8] r.c.m.x.r.QuestionMapper.selectAllCount  : ==> Parameters: 
+2024-12-06 11:04:53.122 DEBUG 27980 --- [XNIO-2 task-8] r.c.m.x.r.QuestionMapper.selectAllCount  : <==      Total: 1
+2024-12-06 11:04:53.123 DEBUG 27980 --- [XNIO-2 task-8] r.c.m.x.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper_answer 
+2024-12-06 11:04:53.123 DEBUG 27980 --- [XNIO-2 task-8] r.c.m.x.r.E.selectAllCount               : ==> Parameters: 
+2024-12-06 11:04:53.126 DEBUG 27980 --- [XNIO-2 task-8] r.c.m.x.r.E.selectAllCount               : <==      Total: 1
+2024-12-06 11:04:53.127 DEBUG 27980 --- [XNIO-2 task-8] r.c.m.x.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper_question_customer_answer 
+2024-12-06 11:04:53.128 DEBUG 27980 --- [XNIO-2 task-8] r.c.m.x.r.E.selectAllCount               : ==> Parameters: 
+2024-12-06 11:04:53.131 DEBUG 27980 --- [XNIO-2 task-8] r.c.m.x.r.E.selectAllCount               : <==      Total: 1
+2024-12-06 11:04:53.133 DEBUG 27980 --- [XNIO-2 task-8] r.c.m.x.r.U.selectCountByDate            : ==>  Preparing: SELECT create_time as name,COUNT(create_time) as value from ( SELECT DATE_FORMAT(create_time,'%Y-%m-%d') as create_time from t_user_event_log WHERE create_time between ? and ? ) a GROUP BY create_time 
+2024-12-06 11:04:53.134 DEBUG 27980 --- [XNIO-2 task-8] r.c.m.x.r.U.selectCountByDate            : ==> Parameters: 2024-12-01 00:00:00.0(Timestamp), 2024-12-31 23:59:59.0(Timestamp)
+2024-12-06 11:04:53.138 DEBUG 27980 --- [XNIO-2 task-8] r.c.m.x.r.U.selectCountByDate            : <==      Total: 5
+2024-12-06 11:04:53.140 DEBUG 27980 --- [XNIO-2 task-8] r.c.m.x.r.E.selectCountByDate            : ==>  Preparing: SELECT create_time as name,COUNT(create_time) as value from ( SELECT DATE_FORMAT(create_time,'%Y-%m-%d') as create_time from t_exam_paper_question_customer_answer WHERE create_time between ? and ? ) a GROUP BY create_time 
+2024-12-06 11:04:53.141 DEBUG 27980 --- [XNIO-2 task-8] r.c.m.x.r.E.selectCountByDate            : ==> Parameters: 2024-12-01 00:00:00.0(Timestamp), 2024-12-31 23:59:59.0(Timestamp)
+2024-12-06 11:04:53.142 DEBUG 27980 --- [XNIO-2 task-8] r.c.m.x.r.E.selectCountByDate            : <==      Total: 2
+2024-12-06 11:05:58.277 DEBUG 27980 --- [XNIO-2 task-11] r.c.m.x.r.SubjectMapper.page_COUNT       : ==>  Preparing: SELECT count(0) FROM t_subject WHERE deleted = 0 
+2024-12-06 11:05:58.277 DEBUG 27980 --- [XNIO-2 task-11] r.c.m.x.r.SubjectMapper.page_COUNT       : ==> Parameters: 
+2024-12-06 11:05:58.278 DEBUG 27980 --- [XNIO-2 task-11] r.c.m.x.r.SubjectMapper.page_COUNT       : <==      Total: 1
+2024-12-06 11:05:58.280 DEBUG 27980 --- [XNIO-2 task-11] r.c.m.xzs.repository.SubjectMapper.page  : ==>  Preparing: SELECT id, name, level, level_name, item_order, deleted FROM t_subject WHERE deleted = 0 order by id desc LIMIT ? 
+2024-12-06 11:05:58.281 DEBUG 27980 --- [XNIO-2 task-11] r.c.m.xzs.repository.SubjectMapper.page  : ==> Parameters: 10(Integer)
+2024-12-06 11:05:58.282 DEBUG 27980 --- [XNIO-2 task-11] r.c.m.xzs.repository.SubjectMapper.page  : <==      Total: 3
+2024-12-06 11:06:08.284 DEBUG 27980 --- [XNIO-2 task-12] r.c.m.x.r.SubjectMapper.page_COUNT       : ==>  Preparing: SELECT count(0) FROM t_subject WHERE deleted = 0 
+2024-12-06 11:06:08.284 DEBUG 27980 --- [XNIO-2 task-12] r.c.m.x.r.SubjectMapper.page_COUNT       : ==> Parameters: 
+2024-12-06 11:06:08.285 DEBUG 27980 --- [XNIO-2 task-12] r.c.m.x.r.SubjectMapper.page_COUNT       : <==      Total: 1
+2024-12-06 11:06:08.287 DEBUG 27980 --- [XNIO-2 task-12] r.c.m.xzs.repository.SubjectMapper.page  : ==>  Preparing: SELECT id, name, level, level_name, item_order, deleted FROM t_subject WHERE deleted = 0 order by id desc LIMIT ? 
+2024-12-06 11:06:08.287 DEBUG 27980 --- [XNIO-2 task-12] r.c.m.xzs.repository.SubjectMapper.page  : ==> Parameters: 10(Integer)
+2024-12-06 11:06:08.288 DEBUG 27980 --- [XNIO-2 task-12] r.c.m.xzs.repository.SubjectMapper.page  : <==      Total: 3
+2024-12-06 11:08:51.683 DEBUG 27980 --- [XNIO-2 task-15] r.c.m.x.r.SubjectMapper.page_COUNT       : ==>  Preparing: SELECT count(0) FROM t_subject WHERE deleted = 0 
+2024-12-06 11:08:51.685 DEBUG 27980 --- [XNIO-2 task-15] r.c.m.x.r.SubjectMapper.page_COUNT       : ==> Parameters: 
+2024-12-06 11:08:51.685 DEBUG 27980 --- [XNIO-2 task-15] r.c.m.x.r.SubjectMapper.page_COUNT       : <==      Total: 1
+2024-12-06 11:08:51.686 DEBUG 27980 --- [XNIO-2 task-15] r.c.m.xzs.repository.SubjectMapper.page  : ==>  Preparing: SELECT id, name, level, level_name, item_order, deleted FROM t_subject WHERE deleted = 0 order by id desc LIMIT ? 
+2024-12-06 11:08:51.687 DEBUG 27980 --- [XNIO-2 task-15] r.c.m.xzs.repository.SubjectMapper.page  : ==> Parameters: 10(Integer)
+2024-12-06 11:08:51.688 DEBUG 27980 --- [XNIO-2 task-15] r.c.m.xzs.repository.SubjectMapper.page  : <==      Total: 3
+2024-12-06 11:08:55.776 DEBUG 27980 --- [XNIO-2 task-16] r.c.m.x.r.SubjectMapper.page_COUNT       : ==>  Preparing: SELECT count(0) FROM t_subject WHERE deleted = 0 
+2024-12-06 11:08:55.776 DEBUG 27980 --- [XNIO-2 task-16] r.c.m.x.r.SubjectMapper.page_COUNT       : ==> Parameters: 
+2024-12-06 11:08:55.778 DEBUG 27980 --- [XNIO-2 task-16] r.c.m.x.r.SubjectMapper.page_COUNT       : <==      Total: 1
+2024-12-06 11:08:55.779 DEBUG 27980 --- [XNIO-2 task-16] r.c.m.xzs.repository.SubjectMapper.page  : ==>  Preparing: SELECT id, name, level, level_name, item_order, deleted FROM t_subject WHERE deleted = 0 order by id desc LIMIT ? 
+2024-12-06 11:08:55.779 DEBUG 27980 --- [XNIO-2 task-16] r.c.m.xzs.repository.SubjectMapper.page  : ==> Parameters: 10(Integer)
+2024-12-06 11:08:55.781 DEBUG 27980 --- [XNIO-2 task-16] r.c.m.xzs.repository.SubjectMapper.page  : <==      Total: 3
+2024-12-06 11:09:08.672 DEBUG 27980 --- [XNIO-2 task-17] r.c.m.x.r.S.selectByPrimaryKey           : ==>  Preparing: select id, name, level, level_name, item_order, deleted from t_subject where id = ? 
+2024-12-06 11:09:08.673 DEBUG 27980 --- [XNIO-2 task-17] r.c.m.x.r.S.selectByPrimaryKey           : ==> Parameters: 5(Integer)
+2024-12-06 11:09:08.674 DEBUG 27980 --- [XNIO-2 task-17] r.c.m.x.r.S.selectByPrimaryKey           : <==      Total: 1
+2024-12-06 11:09:08.676 DEBUG 27980 --- [XNIO-2 task-17] r.c.m.x.r.S.updateByPrimaryKeySelective  : ==>  Preparing: update t_subject SET name = ?, level = ?, level_name = ?, deleted = ? where id = ? 
+2024-12-06 11:09:08.678 DEBUG 27980 --- [XNIO-2 task-17] r.c.m.x.r.S.updateByPrimaryKeySelective  : ==> Parameters: 789(String), 1(Integer), 软件技术(String), true(Boolean), 5(Integer)
+2024-12-06 11:09:08.709 DEBUG 27980 --- [XNIO-2 task-17] r.c.m.x.r.S.updateByPrimaryKeySelective  : <==    Updates: 1
+2024-12-06 11:09:08.936 DEBUG 27980 --- [XNIO-2 task-18] r.c.m.x.r.SubjectMapper.page_COUNT       : ==>  Preparing: SELECT count(0) FROM t_subject WHERE deleted = 0 
+2024-12-06 11:09:08.938 DEBUG 27980 --- [XNIO-2 task-18] r.c.m.x.r.SubjectMapper.page_COUNT       : ==> Parameters: 
+2024-12-06 11:09:08.939 DEBUG 27980 --- [XNIO-2 task-18] r.c.m.x.r.SubjectMapper.page_COUNT       : <==      Total: 1
+2024-12-06 11:09:08.941 DEBUG 27980 --- [XNIO-2 task-18] r.c.m.xzs.repository.SubjectMapper.page  : ==>  Preparing: SELECT id, name, level, level_name, item_order, deleted FROM t_subject WHERE deleted = 0 order by id desc LIMIT ? 
+2024-12-06 11:09:08.942 DEBUG 27980 --- [XNIO-2 task-18] r.c.m.xzs.repository.SubjectMapper.page  : ==> Parameters: 10(Integer)
+2024-12-06 11:09:08.944 DEBUG 27980 --- [XNIO-2 task-18] r.c.m.xzs.repository.SubjectMapper.page  : <==      Total: 2
+2024-12-06 11:10:33.894 DEBUG 27980 --- [XNIO-2 task-20] r.c.m.x.r.SubjectMapper.page_COUNT       : ==>  Preparing: SELECT count(0) FROM t_subject WHERE deleted = 0 
+2024-12-06 11:10:33.896 DEBUG 27980 --- [XNIO-2 task-20] r.c.m.x.r.SubjectMapper.page_COUNT       : ==> Parameters: 
+2024-12-06 11:10:33.896 DEBUG 27980 --- [XNIO-2 task-20] r.c.m.x.r.SubjectMapper.page_COUNT       : <==      Total: 1
+2024-12-06 11:10:33.897 DEBUG 27980 --- [XNIO-2 task-20] r.c.m.xzs.repository.SubjectMapper.page  : ==>  Preparing: SELECT id, name, level, level_name, item_order, deleted FROM t_subject WHERE deleted = 0 order by id desc LIMIT ? 
+2024-12-06 11:10:33.897 DEBUG 27980 --- [XNIO-2 task-20] r.c.m.xzs.repository.SubjectMapper.page  : ==> Parameters: 10(Integer)
+2024-12-06 11:10:33.900 DEBUG 27980 --- [XNIO-2 task-20] r.c.m.xzs.repository.SubjectMapper.page  : <==      Total: 2
+2024-12-06 11:26:27.546 DEBUG 27980 --- [XNIO-2 task-22] r.c.m.x.r.SubjectMapper.page_COUNT       : ==>  Preparing: SELECT count(0) FROM t_subject WHERE deleted = 0 
+2024-12-06 11:26:27.548 DEBUG 27980 --- [XNIO-2 task-22] r.c.m.x.r.SubjectMapper.page_COUNT       : ==> Parameters: 
+2024-12-06 11:26:27.548 DEBUG 27980 --- [XNIO-2 task-22] r.c.m.x.r.SubjectMapper.page_COUNT       : <==      Total: 1
+2024-12-06 11:26:27.549 DEBUG 27980 --- [XNIO-2 task-22] r.c.m.xzs.repository.SubjectMapper.page  : ==>  Preparing: SELECT id, name, level, level_name, item_order, deleted FROM t_subject WHERE deleted = 0 order by id desc LIMIT ? 
+2024-12-06 11:26:27.550 DEBUG 27980 --- [XNIO-2 task-22] r.c.m.xzs.repository.SubjectMapper.page  : ==> Parameters: 10(Integer)
+2024-12-06 11:26:27.551 DEBUG 27980 --- [XNIO-2 task-22] r.c.m.xzs.repository.SubjectMapper.page  : <==      Total: 2
+2024-12-06 11:26:43.387 DEBUG 27980 --- [XNIO-2 task-24] r.c.m.x.r.SubjectMapper.page_COUNT       : ==>  Preparing: SELECT count(0) FROM t_subject WHERE deleted = 0 
+2024-12-06 11:26:43.388 DEBUG 27980 --- [XNIO-2 task-24] r.c.m.x.r.SubjectMapper.page_COUNT       : ==> Parameters: 
+2024-12-06 11:26:43.388 DEBUG 27980 --- [XNIO-2 task-24] r.c.m.x.r.SubjectMapper.page_COUNT       : <==      Total: 1
+2024-12-06 11:26:43.389 DEBUG 27980 --- [XNIO-2 task-24] r.c.m.xzs.repository.SubjectMapper.page  : ==>  Preparing: SELECT id, name, level, level_name, item_order, deleted FROM t_subject WHERE deleted = 0 order by id desc LIMIT ? 
+2024-12-06 11:26:43.389 DEBUG 27980 --- [XNIO-2 task-24] r.c.m.xzs.repository.SubjectMapper.page  : ==> Parameters: 10(Integer)
+2024-12-06 11:26:43.392 DEBUG 27980 --- [XNIO-2 task-24] r.c.m.xzs.repository.SubjectMapper.page  : <==      Total: 2
+2024-12-06 11:28:46.399 DEBUG 27980 --- [XNIO-2 task-25] r.c.m.x.r.SubjectMapper.page_COUNT       : ==>  Preparing: SELECT count(0) FROM t_subject WHERE deleted = 0 
+2024-12-06 11:28:46.400 DEBUG 27980 --- [XNIO-2 task-25] r.c.m.x.r.SubjectMapper.page_COUNT       : ==> Parameters: 
+2024-12-06 11:28:46.400 DEBUG 27980 --- [XNIO-2 task-25] r.c.m.x.r.SubjectMapper.page_COUNT       : <==      Total: 1
+2024-12-06 11:28:46.402 DEBUG 27980 --- [XNIO-2 task-25] r.c.m.xzs.repository.SubjectMapper.page  : ==>  Preparing: SELECT id, name, level, level_name, item_order, deleted FROM t_subject WHERE deleted = 0 order by id desc LIMIT ? 
+2024-12-06 11:28:46.402 DEBUG 27980 --- [XNIO-2 task-25] r.c.m.xzs.repository.SubjectMapper.page  : ==> Parameters: 10(Integer)
+2024-12-06 11:28:46.403 DEBUG 27980 --- [XNIO-2 task-25] r.c.m.xzs.repository.SubjectMapper.page  : <==      Total: 2
+2024-12-06 11:29:46.622 DEBUG 27980 --- [XNIO-2 task-26] r.c.m.x.r.SubjectMapper.page_COUNT       : ==>  Preparing: SELECT count(0) FROM t_subject WHERE deleted = 0 
+2024-12-06 11:29:46.622 DEBUG 27980 --- [XNIO-2 task-26] r.c.m.x.r.SubjectMapper.page_COUNT       : ==> Parameters: 
+2024-12-06 11:29:46.623 DEBUG 27980 --- [XNIO-2 task-26] r.c.m.x.r.SubjectMapper.page_COUNT       : <==      Total: 1
+2024-12-06 11:29:46.626 DEBUG 27980 --- [XNIO-2 task-26] r.c.m.xzs.repository.SubjectMapper.page  : ==>  Preparing: SELECT id, name, level, level_name, item_order, deleted FROM t_subject WHERE deleted = 0 order by id desc LIMIT ? 
+2024-12-06 11:29:46.626 DEBUG 27980 --- [XNIO-2 task-26] r.c.m.xzs.repository.SubjectMapper.page  : ==> Parameters: 10(Integer)
+2024-12-06 11:29:46.627 DEBUG 27980 --- [XNIO-2 task-26] r.c.m.xzs.repository.SubjectMapper.page  : <==      Total: 2
+2024-12-06 11:33:00.248 DEBUG 27980 --- [XNIO-2 task-29] r.c.m.x.r.SubjectMapper.page_COUNT       : ==>  Preparing: SELECT count(0) FROM t_subject WHERE deleted = 0 
+2024-12-06 11:33:00.249 DEBUG 27980 --- [XNIO-2 task-29] r.c.m.x.r.SubjectMapper.page_COUNT       : ==> Parameters: 
+2024-12-06 11:33:00.250 DEBUG 27980 --- [XNIO-2 task-29] r.c.m.x.r.SubjectMapper.page_COUNT       : <==      Total: 1
+2024-12-06 11:33:00.251 DEBUG 27980 --- [XNIO-2 task-29] r.c.m.xzs.repository.SubjectMapper.page  : ==>  Preparing: SELECT id, name, level, level_name, item_order, deleted FROM t_subject WHERE deleted = 0 order by id desc LIMIT ? 
+2024-12-06 11:33:00.251 DEBUG 27980 --- [XNIO-2 task-29] r.c.m.xzs.repository.SubjectMapper.page  : ==> Parameters: 10(Integer)
+2024-12-06 11:33:00.252 DEBUG 27980 --- [XNIO-2 task-29] r.c.m.xzs.repository.SubjectMapper.page  : <==      Total: 2
+2024-12-06 12:42:41.804 DEBUG 27980 --- [XNIO-2 task-31] r.c.m.x.r.SubjectMapper.page_COUNT       : ==>  Preparing: SELECT count(0) FROM t_subject WHERE deleted = 0 
+2024-12-06 12:42:41.805 DEBUG 27980 --- [XNIO-2 task-31] r.c.m.x.r.SubjectMapper.page_COUNT       : ==> Parameters: 
+2024-12-06 12:42:41.805 DEBUG 27980 --- [XNIO-2 task-31] r.c.m.x.r.SubjectMapper.page_COUNT       : <==      Total: 1
+2024-12-06 12:42:41.806 DEBUG 27980 --- [XNIO-2 task-31] r.c.m.xzs.repository.SubjectMapper.page  : ==>  Preparing: SELECT id, name, level, level_name, item_order, deleted FROM t_subject WHERE deleted = 0 order by id desc LIMIT ? 
+2024-12-06 12:42:41.806 DEBUG 27980 --- [XNIO-2 task-31] r.c.m.xzs.repository.SubjectMapper.page  : ==> Parameters: 10(Integer)
+2024-12-06 12:42:41.806 DEBUG 27980 --- [XNIO-2 task-31] r.c.m.xzs.repository.SubjectMapper.page  : <==      Total: 2
+2024-12-06 12:42:49.773  WARN 27980 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h9m34s434ms902µs).
+2024-12-06 12:42:53.204 DEBUG 27980 --- [XNIO-2 task-33] r.c.m.x.r.SubjectMapper.page_COUNT       : ==>  Preparing: SELECT count(0) FROM t_subject WHERE deleted = 0 
+2024-12-06 12:42:53.204 DEBUG 27980 --- [XNIO-2 task-33] r.c.m.x.r.SubjectMapper.page_COUNT       : ==> Parameters: 
+2024-12-06 12:42:53.205 DEBUG 27980 --- [XNIO-2 task-33] r.c.m.x.r.SubjectMapper.page_COUNT       : <==      Total: 1
+2024-12-06 12:42:53.205 DEBUG 27980 --- [XNIO-2 task-33] r.c.m.xzs.repository.SubjectMapper.page  : ==>  Preparing: SELECT id, name, level, level_name, item_order, deleted FROM t_subject WHERE deleted = 0 order by id desc LIMIT ? 
+2024-12-06 12:42:53.206 DEBUG 27980 --- [XNIO-2 task-33] r.c.m.xzs.repository.SubjectMapper.page  : ==> Parameters: 10(Integer)
+2024-12-06 12:42:53.206 DEBUG 27980 --- [XNIO-2 task-33] r.c.m.xzs.repository.SubjectMapper.page  : <==      Total: 2
+2024-12-06 13:06:16.144 DEBUG 27980 --- [XNIO-2 task-35] r.c.m.x.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper where deleted=0 
+2024-12-06 13:06:16.144 DEBUG 27980 --- [XNIO-2 task-35] r.c.m.x.r.E.selectAllCount               : ==> Parameters: 
+2024-12-06 13:06:16.146 DEBUG 27980 --- [XNIO-2 task-35] r.c.m.x.r.E.selectAllCount               : <==      Total: 1
+2024-12-06 13:06:16.147 DEBUG 27980 --- [XNIO-2 task-35] r.c.m.x.r.QuestionMapper.selectAllCount  : ==>  Preparing: SELECT count(*) from t_question where deleted=0 
+2024-12-06 13:06:16.147 DEBUG 27980 --- [XNIO-2 task-35] r.c.m.x.r.QuestionMapper.selectAllCount  : ==> Parameters: 
+2024-12-06 13:06:16.147 DEBUG 27980 --- [XNIO-2 task-35] r.c.m.x.r.QuestionMapper.selectAllCount  : <==      Total: 1
+2024-12-06 13:06:16.148 DEBUG 27980 --- [XNIO-2 task-35] r.c.m.x.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper_answer 
+2024-12-06 13:06:16.148 DEBUG 27980 --- [XNIO-2 task-35] r.c.m.x.r.E.selectAllCount               : ==> Parameters: 
+2024-12-06 13:06:16.151 DEBUG 27980 --- [XNIO-2 task-35] r.c.m.x.r.E.selectAllCount               : <==      Total: 1
+2024-12-06 13:06:16.151 DEBUG 27980 --- [XNIO-2 task-35] r.c.m.x.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper_question_customer_answer 
+2024-12-06 13:06:16.151 DEBUG 27980 --- [XNIO-2 task-35] r.c.m.x.r.E.selectAllCount               : ==> Parameters: 
+2024-12-06 13:06:16.152 DEBUG 27980 --- [XNIO-2 task-35] r.c.m.x.r.E.selectAllCount               : <==      Total: 1
+2024-12-06 13:06:16.153 DEBUG 27980 --- [XNIO-2 task-35] r.c.m.x.r.U.selectCountByDate            : ==>  Preparing: SELECT create_time as name,COUNT(create_time) as value from ( SELECT DATE_FORMAT(create_time,'%Y-%m-%d') as create_time from t_user_event_log WHERE create_time between ? and ? ) a GROUP BY create_time 
+2024-12-06 13:06:16.154 DEBUG 27980 --- [XNIO-2 task-35] r.c.m.x.r.U.selectCountByDate            : ==> Parameters: 2024-12-01 00:00:00.0(Timestamp), 2024-12-31 23:59:59.0(Timestamp)
+2024-12-06 13:06:16.155 DEBUG 27980 --- [XNIO-2 task-35] r.c.m.x.r.U.selectCountByDate            : <==      Total: 5
+2024-12-06 13:06:16.156 DEBUG 27980 --- [XNIO-2 task-35] r.c.m.x.r.E.selectCountByDate            : ==>  Preparing: SELECT create_time as name,COUNT(create_time) as value from ( SELECT DATE_FORMAT(create_time,'%Y-%m-%d') as create_time from t_exam_paper_question_customer_answer WHERE create_time between ? and ? ) a GROUP BY create_time 
+2024-12-06 13:06:16.156 DEBUG 27980 --- [XNIO-2 task-35] r.c.m.x.r.E.selectCountByDate            : ==> Parameters: 2024-12-01 00:00:00.0(Timestamp), 2024-12-31 23:59:59.0(Timestamp)
+2024-12-06 13:06:16.157 DEBUG 27980 --- [XNIO-2 task-35] r.c.m.x.r.E.selectCountByDate            : <==      Total: 2
+2024-12-06 13:06:20.472 DEBUG 27980 --- [XNIO-2 task-36] r.c.m.x.r.SubjectMapper.page_COUNT       : ==>  Preparing: SELECT count(0) FROM t_subject WHERE deleted = 0 
+2024-12-06 13:06:20.472 DEBUG 27980 --- [XNIO-2 task-36] r.c.m.x.r.SubjectMapper.page_COUNT       : ==> Parameters: 
+2024-12-06 13:06:20.472 DEBUG 27980 --- [XNIO-2 task-36] r.c.m.x.r.SubjectMapper.page_COUNT       : <==      Total: 1
+2024-12-06 13:06:20.474 DEBUG 27980 --- [XNIO-2 task-36] r.c.m.xzs.repository.SubjectMapper.page  : ==>  Preparing: SELECT id, name, level, level_name, item_order, deleted FROM t_subject WHERE deleted = 0 order by id desc LIMIT ? 
+2024-12-06 13:06:20.474 DEBUG 27980 --- [XNIO-2 task-36] r.c.m.xzs.repository.SubjectMapper.page  : ==> Parameters: 10(Integer)
+2024-12-06 13:06:20.474 DEBUG 27980 --- [XNIO-2 task-36] r.c.m.xzs.repository.SubjectMapper.page  : <==      Total: 2
+2024-12-06 13:06:25.124 DEBUG 27980 --- [XNIO-2 task-37] r.c.m.x.r.SubjectMapper.page_COUNT       : ==>  Preparing: SELECT count(0) FROM t_subject WHERE deleted = 0 AND level = ? 
+2024-12-06 13:06:25.125 DEBUG 27980 --- [XNIO-2 task-37] r.c.m.x.r.SubjectMapper.page_COUNT       : ==> Parameters: 1(Integer)
+2024-12-06 13:06:25.126 DEBUG 27980 --- [XNIO-2 task-37] r.c.m.x.r.SubjectMapper.page_COUNT       : <==      Total: 1
+2024-12-06 13:06:25.127 DEBUG 27980 --- [XNIO-2 task-37] r.c.m.xzs.repository.SubjectMapper.page  : ==>  Preparing: SELECT id, name, level, level_name, item_order, deleted FROM t_subject WHERE deleted = 0 AND level = ? order by id desc LIMIT ? 
+2024-12-06 13:06:25.127 DEBUG 27980 --- [XNIO-2 task-37] r.c.m.xzs.repository.SubjectMapper.page  : ==> Parameters: 1(Integer), 10(Integer)
+2024-12-06 13:06:25.128 DEBUG 27980 --- [XNIO-2 task-37] r.c.m.xzs.repository.SubjectMapper.page  : <==      Total: 2
+2024-12-06 13:06:33.283 DEBUG 27980 --- [XNIO-2 task-40] r.c.m.x.r.SubjectMapper.page_COUNT       : ==>  Preparing: SELECT count(0) FROM t_subject WHERE deleted = 0 
+2024-12-06 13:06:33.283 DEBUG 27980 --- [XNIO-2 task-40] r.c.m.x.r.SubjectMapper.page_COUNT       : ==> Parameters: 
+2024-12-06 13:06:33.284 DEBUG 27980 --- [XNIO-2 task-40] r.c.m.x.r.SubjectMapper.page_COUNT       : <==      Total: 1
+2024-12-06 13:06:33.285 DEBUG 27980 --- [XNIO-2 task-40] r.c.m.xzs.repository.SubjectMapper.page  : ==>  Preparing: SELECT id, name, level, level_name, item_order, deleted FROM t_subject WHERE deleted = 0 order by id desc LIMIT ? 
+2024-12-06 13:06:33.285 DEBUG 27980 --- [XNIO-2 task-40] r.c.m.xzs.repository.SubjectMapper.page  : ==> Parameters: 10(Integer)
+2024-12-06 13:06:33.287 DEBUG 27980 --- [XNIO-2 task-40] r.c.m.xzs.repository.SubjectMapper.page  : <==      Total: 2
+2024-12-06 13:30:32.536 DEBUG 27980 --- [XNIO-2 task-43] r.c.m.x.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper where deleted=0 
+2024-12-06 13:30:32.537 DEBUG 27980 --- [XNIO-2 task-43] r.c.m.x.r.E.selectAllCount               : ==> Parameters: 
+2024-12-06 13:30:32.538 DEBUG 27980 --- [XNIO-2 task-43] r.c.m.x.r.E.selectAllCount               : <==      Total: 1
+2024-12-06 13:30:32.539 DEBUG 27980 --- [XNIO-2 task-43] r.c.m.x.r.QuestionMapper.selectAllCount  : ==>  Preparing: SELECT count(*) from t_question where deleted=0 
+2024-12-06 13:30:32.539 DEBUG 27980 --- [XNIO-2 task-43] r.c.m.x.r.QuestionMapper.selectAllCount  : ==> Parameters: 
+2024-12-06 13:30:32.539 DEBUG 27980 --- [XNIO-2 task-43] r.c.m.x.r.QuestionMapper.selectAllCount  : <==      Total: 1
+2024-12-06 13:30:32.540 DEBUG 27980 --- [XNIO-2 task-43] r.c.m.x.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper_answer 
+2024-12-06 13:30:32.540 DEBUG 27980 --- [XNIO-2 task-43] r.c.m.x.r.E.selectAllCount               : ==> Parameters: 
+2024-12-06 13:30:32.542 DEBUG 27980 --- [XNIO-2 task-43] r.c.m.x.r.E.selectAllCount               : <==      Total: 1
+2024-12-06 13:30:32.542 DEBUG 27980 --- [XNIO-2 task-43] r.c.m.x.r.E.selectAllCount               : ==>  Preparing: SELECT count(*) from t_exam_paper_question_customer_answer 
+2024-12-06 13:30:32.543 DEBUG 27980 --- [XNIO-2 task-43] r.c.m.x.r.E.selectAllCount               : ==> Parameters: 
+2024-12-06 13:30:32.545 DEBUG 27980 --- [XNIO-2 task-43] r.c.m.x.r.E.selectAllCount               : <==      Total: 1
+2024-12-06 13:30:32.545 DEBUG 27980 --- [XNIO-2 task-43] r.c.m.x.r.U.selectCountByDate            : ==>  Preparing: SELECT create_time as name,COUNT(create_time) as value from ( SELECT DATE_FORMAT(create_time,'%Y-%m-%d') as create_time from t_user_event_log WHERE create_time between ? and ? ) a GROUP BY create_time 
+2024-12-06 13:30:32.546 DEBUG 27980 --- [XNIO-2 task-43] r.c.m.x.r.U.selectCountByDate            : ==> Parameters: 2024-12-01 00:00:00.0(Timestamp), 2024-12-31 23:59:59.0(Timestamp)
+2024-12-06 13:30:32.547 DEBUG 27980 --- [XNIO-2 task-43] r.c.m.x.r.U.selectCountByDate            : <==      Total: 5
+2024-12-06 13:30:32.549 DEBUG 27980 --- [XNIO-2 task-43] r.c.m.x.r.E.selectCountByDate            : ==>  Preparing: SELECT create_time as name,COUNT(create_time) as value from ( SELECT DATE_FORMAT(create_time,'%Y-%m-%d') as create_time from t_exam_paper_question_customer_answer WHERE create_time between ? and ? ) a GROUP BY create_time 
+2024-12-06 13:30:32.549 DEBUG 27980 --- [XNIO-2 task-43] r.c.m.x.r.E.selectCountByDate            : ==> Parameters: 2024-12-01 00:00:00.0(Timestamp), 2024-12-31 23:59:59.0(Timestamp)
+2024-12-06 13:30:32.551 DEBUG 27980 --- [XNIO-2 task-43] r.c.m.x.r.E.selectCountByDate            : <==      Total: 2
+2024-12-06 15:03:28.799  INFO 27980 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-06 15:03:28.812  INFO 27980 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-06 15:03:28.817  INFO 27980 --- [Thread-19] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-12-06 15:03:42.192  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Starting XzsApplication on acerro with PID 27980 (D:\Workshop\week19\hdt\week18\xzs-mysql-master\source\xzs\target\classes started by 86190 in D:\Workshop\week19\hdt\week18\xzs-mysql-master\source\xzs)
+2024-12-06 15:03:42.192  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : The following profiles are active: dev
+2024-12-06 15:03:43.088  WARN 27980 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-12-06 15:03:43.089  INFO 27980 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-12-06 15:03:43.089  INFO 27980 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 889 ms
+2024-12-06 15:03:43.652  INFO 27980 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@38e75080, org.springframework.security.web.context.SecurityContextPersistenceFilter@139cb218, org.springframework.security.web.header.HeaderWriterFilter@73b63e62, org.springframework.web.filter.CorsFilter@6e536ecf, org.springframework.security.web.authentication.logout.LogoutFilter@4e934af8, com.mindskip.xzs.configuration.spring.security.RestLoginAuthenticationFilter@7053566f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7dcdf041, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@28e89c2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4009f2df, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@238a5807, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7c8ec4bc, org.springframework.security.web.session.SessionManagementFilter@2f343402, org.springframework.security.web.access.ExceptionTranslationFilter@28973283, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@26be0b98]
+2024-12-06 15:03:43.931  INFO 27980 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-06 15:03:43.971  INFO 27980 --- [restartedMain] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8000 (http) with context path ''
+2024-12-06 15:03:43.972  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Started XzsApplication in 1.833 seconds (JVM running for 14533.866)
+2024-12-06 15:03:43.975  INFO 27980 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-12-06 15:08:36.541  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Starting XzsApplication on acerro with PID 27980 (D:\Workshop\week19\hdt\week18\xzs-mysql-master\source\xzs\target\classes started by 86190 in D:\Workshop\week19\hdt\week18\xzs-mysql-master\source\xzs)
+2024-12-06 15:08:36.541  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : The following profiles are active: dev
+2024-12-06 15:08:37.244  WARN 27980 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-12-06 15:08:37.245  INFO 27980 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-12-06 15:08:37.245  INFO 27980 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 700 ms
+2024-12-06 15:08:37.621  INFO 27980 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1c216a6b, org.springframework.security.web.context.SecurityContextPersistenceFilter@c4cf3c6, org.springframework.security.web.header.HeaderWriterFilter@20a44c58, org.springframework.web.filter.CorsFilter@1e637426, org.springframework.security.web.authentication.logout.LogoutFilter@7f59045, com.mindskip.xzs.configuration.spring.security.RestLoginAuthenticationFilter@1162bc98, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5d7caad9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@41a55792, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@43611572, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@9ac2ff2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@26f12f51, org.springframework.security.web.session.SessionManagementFilter@7b86d06, org.springframework.security.web.access.ExceptionTranslationFilter@3aaef14c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@612c6d84]
+2024-12-06 15:08:37.818  INFO 27980 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-06 15:08:37.871  INFO 27980 --- [restartedMain] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8000 (http) with context path ''
+2024-12-06 15:08:37.872  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Started XzsApplication in 1.366 seconds (JVM running for 14827.766)
+2024-12-06 15:08:37.875  INFO 27980 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-12-06 15:09:22.830  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Starting XzsApplication on acerro with PID 27980 (D:\Workshop\week19\hdt\week18\xzs-mysql-master\source\xzs\target\classes started by 86190 in D:\Workshop\week19\hdt\week18\xzs-mysql-master\source\xzs)
+2024-12-06 15:09:22.830  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : The following profiles are active: dev
+2024-12-06 15:09:23.596  WARN 27980 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-12-06 15:09:23.598  INFO 27980 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-12-06 15:09:23.598  INFO 27980 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 762 ms
+2024-12-06 15:09:23.967  INFO 27980 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5763946f, org.springframework.security.web.context.SecurityContextPersistenceFilter@2a67b305, org.springframework.security.web.header.HeaderWriterFilter@15e3ff22, org.springframework.web.filter.CorsFilter@34971776, org.springframework.security.web.authentication.logout.LogoutFilter@52210dd6, com.mindskip.xzs.configuration.spring.security.RestLoginAuthenticationFilter@1103aa11, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1b97d591, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@638d2841, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@699dd1fd, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@1659a885, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@11096728, org.springframework.security.web.session.SessionManagementFilter@12b5264e, org.springframework.security.web.access.ExceptionTranslationFilter@3d0e85a5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6520d6fb]
+2024-12-06 15:09:24.208  INFO 27980 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-06 15:09:24.262  INFO 27980 --- [restartedMain] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8000 (http) with context path ''
+2024-12-06 15:09:24.263  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Started XzsApplication in 1.473 seconds (JVM running for 14874.156)
+2024-12-06 15:09:24.265  INFO 27980 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-12-06 15:09:46.411  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Starting XzsApplication on acerro with PID 27980 (D:\Workshop\week19\hdt\week18\xzs-mysql-master\source\xzs\target\classes started by 86190 in D:\Workshop\week19\hdt\week18\xzs-mysql-master\source\xzs)
+2024-12-06 15:09:46.411  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : The following profiles are active: dev
+2024-12-06 15:09:47.157  WARN 27980 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-12-06 15:09:47.158  INFO 27980 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-12-06 15:09:47.158  INFO 27980 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 743 ms
+2024-12-06 15:09:47.612  INFO 27980 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5666ce49, org.springframework.security.web.context.SecurityContextPersistenceFilter@50142a41, org.springframework.security.web.header.HeaderWriterFilter@1719dd84, org.springframework.web.filter.CorsFilter@6b2fc652, org.springframework.security.web.authentication.logout.LogoutFilter@27182350, com.mindskip.xzs.configuration.spring.security.RestLoginAuthenticationFilter@2b702ce0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@58a1e496, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2cc74392, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@75eb4e73, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@61a7253e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3c7d0af5, org.springframework.security.web.session.SessionManagementFilter@6bb732cc, org.springframework.security.web.access.ExceptionTranslationFilter@58f241d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3201eeb1]
+2024-12-06 15:09:47.836  INFO 27980 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-06 15:09:47.869  INFO 27980 --- [restartedMain] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8000 (http) with context path ''
+2024-12-06 15:09:47.869  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Started XzsApplication in 1.497 seconds (JVM running for 14897.764)
+2024-12-06 15:09:47.871  INFO 27980 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-12-06 15:11:56.880  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Starting XzsApplication on acerro with PID 27980 (D:\Workshop\week19\hdt\week18\xzs-mysql-master\source\xzs\target\classes started by 86190 in D:\Workshop\week19\hdt\week18\xzs-mysql-master\source\xzs)
+2024-12-06 15:11:56.880  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : The following profiles are active: dev
+2024-12-06 15:11:57.629  WARN 27980 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-12-06 15:11:57.630  INFO 27980 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-12-06 15:11:57.630  INFO 27980 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 746 ms
+2024-12-06 15:11:58.088  INFO 27980 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1808e70b, org.springframework.security.web.context.SecurityContextPersistenceFilter@6ad1ec4a, org.springframework.security.web.header.HeaderWriterFilter@3d389a02, org.springframework.web.filter.CorsFilter@6e49b61b, org.springframework.security.web.authentication.logout.LogoutFilter@55d0e675, com.mindskip.xzs.configuration.spring.security.RestLoginAuthenticationFilter@13369b58, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@44b42bf0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1b82678e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@62130676, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@78a6a522, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@b47eb89, org.springframework.security.web.session.SessionManagementFilter@25f250d9, org.springframework.security.web.access.ExceptionTranslationFilter@4a8764aa, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@349845f4]
+2024-12-06 15:11:58.289  INFO 27980 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-06 15:11:58.327  INFO 27980 --- [restartedMain] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8000 (http) with context path ''
+2024-12-06 15:11:58.328  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Started XzsApplication in 1.483 seconds (JVM running for 15028.222)
+2024-12-06 15:11:58.331  INFO 27980 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-12-06 15:12:54.836  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Starting XzsApplication on acerro with PID 27980 (D:\Workshop\week19\hdt\week18\xzs-mysql-master\source\xzs\target\classes started by 86190 in D:\Workshop\week19\hdt\week18\xzs-mysql-master\source\xzs)
+2024-12-06 15:12:54.836  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : The following profiles are active: dev
+2024-12-06 15:12:55.526  WARN 27980 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-12-06 15:12:55.527  INFO 27980 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-12-06 15:12:55.527  INFO 27980 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 686 ms
+2024-12-06 15:12:55.935  INFO 27980 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3d33a51e, org.springframework.security.web.context.SecurityContextPersistenceFilter@2d49859b, org.springframework.security.web.header.HeaderWriterFilter@1e973f9f, org.springframework.web.filter.CorsFilter@6b531a15, org.springframework.security.web.authentication.logout.LogoutFilter@22d6050b, com.mindskip.xzs.configuration.spring.security.RestLoginAuthenticationFilter@13998576, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@53830219, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@152563bb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3269cd47, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@3862a991, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@200b5eac, org.springframework.security.web.session.SessionManagementFilter@1720e1e0, org.springframework.security.web.access.ExceptionTranslationFilter@726957ae, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6e070633]
+2024-12-06 15:12:56.158  INFO 27980 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-06 15:12:56.203  INFO 27980 --- [restartedMain] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8000 (http) with context path ''
+2024-12-06 15:12:56.204  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Started XzsApplication in 1.396 seconds (JVM running for 15086.098)
+2024-12-06 15:12:56.205  INFO 27980 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-12-06 15:25:05.477  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Starting XzsApplication on acerro with PID 27980 (D:\Workshop\week19\hdt\week18\xzs-mysql-master\source\xzs\target\classes started by 86190 in D:\Workshop\week19\hdt\week18\xzs-mysql-master\source\xzs)
+2024-12-06 15:25:05.477  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : The following profiles are active: dev
+2024-12-06 15:25:06.194  WARN 27980 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-12-06 15:25:06.195  INFO 27980 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-12-06 15:25:06.195  INFO 27980 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 714 ms
+2024-12-06 15:25:06.597  INFO 27980 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7d4ffb5a, org.springframework.security.web.context.SecurityContextPersistenceFilter@6f8449d6, org.springframework.security.web.header.HeaderWriterFilter@2a7cfbc7, org.springframework.web.filter.CorsFilter@33493cbb, org.springframework.security.web.authentication.logout.LogoutFilter@142bb982, com.mindskip.xzs.configuration.spring.security.RestLoginAuthenticationFilter@70fcdbbe, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2a9589ce, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3d0bb513, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7064c3b6, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@5fb61649, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@351418e5, org.springframework.security.web.session.SessionManagementFilter@4394e7e7, org.springframework.security.web.access.ExceptionTranslationFilter@397d7409, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@184ad058]
+2024-12-06 15:25:06.821  INFO 27980 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-06 15:25:06.858  INFO 27980 --- [restartedMain] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8000 (http) with context path ''
+2024-12-06 15:25:06.860  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Started XzsApplication in 1.423 seconds (JVM running for 15816.753)
+2024-12-06 15:25:06.861  INFO 27980 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-12-06 15:29:02.235  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Starting XzsApplication on acerro with PID 27980 (D:\Workshop\week19\hdt\week18\xzs-mysql-master\source\xzs\target\classes started by 86190 in D:\Workshop\week19\hdt\week18\xzs-mysql-master\source\xzs)
+2024-12-06 15:29:02.235  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : The following profiles are active: dev
+2024-12-06 15:29:02.922  WARN 27980 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-12-06 15:29:02.924  INFO 27980 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-12-06 15:29:02.924  INFO 27980 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 685 ms
+2024-12-06 15:29:03.287  INFO 27980 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5e336818, org.springframework.security.web.context.SecurityContextPersistenceFilter@7f33df67, org.springframework.security.web.header.HeaderWriterFilter@3bd34e7c, org.springframework.web.filter.CorsFilter@4d94b608, org.springframework.security.web.authentication.logout.LogoutFilter@5ca7283b, com.mindskip.xzs.configuration.spring.security.RestLoginAuthenticationFilter@b90e303, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6aa4ce61, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@12489ac3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@33498658, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@141c26d3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@10fbe1d, org.springframework.security.web.session.SessionManagementFilter@a8cb1a3, org.springframework.security.web.access.ExceptionTranslationFilter@7cf22c9e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@59f949a7]
+2024-12-06 15:29:03.481  INFO 27980 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-06 15:29:03.509  INFO 27980 --- [restartedMain] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8000 (http) with context path ''
+2024-12-06 15:29:03.510  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Started XzsApplication in 1.306 seconds (JVM running for 16053.404)
+2024-12-06 15:29:03.512  INFO 27980 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-12-06 15:34:50.861  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Starting XzsApplication on acerro with PID 27980 (D:\Workshop\week19\hdt\week18\xzs-mysql-master\source\xzs\target\classes started by 86190 in D:\Workshop\week19\hdt\week18\xzs-mysql-master\source\xzs)
+2024-12-06 15:34:50.861  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : The following profiles are active: dev
+2024-12-06 15:34:50.863  INFO 27980 --- [restartedMain] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class com.mindskip.xzs.XzsApplication: java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionProxy
+2024-12-06 15:34:50.863 ERROR 27980 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionProxy
+	at sun.reflect.annotation.AnnotationParser.parseClassArray(AnnotationParser.java:724)
+	at sun.reflect.annotation.AnnotationParser.parseArray(AnnotationParser.java:531)
+	at sun.reflect.annotation.AnnotationParser.parseMemberValue(AnnotationParser.java:355)
+	at sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:286)
+	at sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:120)
+	at sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:72)
+	at java.lang.Class.createAnnotationData(Class.java:3521)
+	at java.lang.Class.annotationData(Class.java:3510)
+	at java.lang.Class.getAnnotations(Class.java:3446)
+	at org.springframework.core.type.StandardAnnotationMetadata.<init>(StandardAnnotationMetadata.java:70)
+	at org.springframework.beans.factory.annotation.AnnotatedGenericBeanDefinition.<init>(AnnotatedGenericBeanDefinition.java:58)
+	at org.springframework.context.annotation.AnnotatedBeanDefinitionReader.doRegisterBean(AnnotatedBeanDefinitionReader.java:216)
+	at org.springframework.context.annotation.AnnotatedBeanDefinitionReader.registerBean(AnnotatedBeanDefinitionReader.java:145)
+	at org.springframework.context.annotation.AnnotatedBeanDefinitionReader.register(AnnotatedBeanDefinitionReader.java:135)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:156)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:135)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:127)
+	at org.springframework.boot.SpringApplication.load(SpringApplication.java:686)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:384)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202)
+	at com.mindskip.xzs.XzsApplication.main(XzsApplication.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+
+2024-12-06 15:40:25.964  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Starting XzsApplication on acerro with PID 27980 (D:\Workshop\week19\hdt\week18\xzs-mysql-master\source\xzs\target\classes started by 86190 in D:\Workshop\week19\hdt\week18\xzs-mysql-master\source\xzs)
+2024-12-06 15:40:25.964  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : The following profiles are active: dev
+2024-12-06 15:40:25.966  INFO 27980 --- [restartedMain] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class com.mindskip.xzs.XzsApplication: java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionProxy
+2024-12-06 15:40:25.967 ERROR 27980 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionProxy
+	at sun.reflect.annotation.AnnotationParser.parseClassArray(AnnotationParser.java:724)
+	at sun.reflect.annotation.AnnotationParser.parseArray(AnnotationParser.java:531)
+	at sun.reflect.annotation.AnnotationParser.parseMemberValue(AnnotationParser.java:355)
+	at sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:286)
+	at sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:120)
+	at sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:72)
+	at java.lang.Class.createAnnotationData(Class.java:3521)
+	at java.lang.Class.annotationData(Class.java:3510)
+	at java.lang.Class.getAnnotations(Class.java:3446)
+	at org.springframework.core.type.StandardAnnotationMetadata.<init>(StandardAnnotationMetadata.java:70)
+	at org.springframework.beans.factory.annotation.AnnotatedGenericBeanDefinition.<init>(AnnotatedGenericBeanDefinition.java:58)
+	at org.springframework.context.annotation.AnnotatedBeanDefinitionReader.doRegisterBean(AnnotatedBeanDefinitionReader.java:216)
+	at org.springframework.context.annotation.AnnotatedBeanDefinitionReader.registerBean(AnnotatedBeanDefinitionReader.java:145)
+	at org.springframework.context.annotation.AnnotatedBeanDefinitionReader.register(AnnotatedBeanDefinitionReader.java:135)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:156)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:135)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:127)
+	at org.springframework.boot.SpringApplication.load(SpringApplication.java:686)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:384)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202)
+	at com.mindskip.xzs.XzsApplication.main(XzsApplication.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+
+2024-12-06 15:56:45.901  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Starting XzsApplication on acerro with PID 27980 (D:\Workshop\week19\hdt\week18\xzs-mysql-master\source\xzs\target\classes started by 86190 in D:\Workshop\week19\hdt\week18\xzs-mysql-master\source\xzs)
+2024-12-06 15:56:45.901  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : The following profiles are active: dev
+2024-12-06 15:56:46.574  WARN 27980 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-12-06 15:56:46.575  INFO 27980 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-12-06 15:56:46.575  INFO 27980 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 670 ms
+2024-12-06 15:56:46.926  INFO 27980 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1b79c882, org.springframework.security.web.context.SecurityContextPersistenceFilter@72aed8a8, org.springframework.security.web.header.HeaderWriterFilter@4251218a, org.springframework.web.filter.CorsFilter@11500378, org.springframework.security.web.authentication.logout.LogoutFilter@3978e929, com.mindskip.xzs.configuration.spring.security.RestLoginAuthenticationFilter@2229879a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@9fb825e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@59e149d3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@12776e14, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@2d17e2e2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@44ec9a7e, org.springframework.security.web.session.SessionManagementFilter@7e2aa1c2, org.springframework.security.web.access.ExceptionTranslationFilter@59fe4345, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6afc0bee]
+2024-12-06 15:56:47.139  INFO 27980 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-06 15:56:47.166  INFO 27980 --- [restartedMain] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8000 (http) with context path ''
+2024-12-06 15:56:47.166  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Started XzsApplication in 1.293 seconds (JVM running for 17717.06)
+2024-12-06 15:56:47.168  INFO 27980 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-12-06 15:58:03.309  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Starting XzsApplication on acerro with PID 27980 (D:\Workshop\week19\hdt\week18\xzs-mysql-master\source\xzs\target\classes started by 86190 in D:\Workshop\week19\hdt\week18\xzs-mysql-master\source\xzs)
+2024-12-06 15:58:03.309  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : The following profiles are active: dev
+2024-12-06 15:58:03.955  WARN 27980 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-12-06 15:58:03.957  INFO 27980 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-12-06 15:58:03.957  INFO 27980 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 644 ms
+2024-12-06 15:58:04.284  INFO 27980 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6898fc5a, org.springframework.security.web.context.SecurityContextPersistenceFilter@43cc877a, org.springframework.security.web.header.HeaderWriterFilter@19fb1f9d, org.springframework.web.filter.CorsFilter@2640e91a, org.springframework.security.web.authentication.logout.LogoutFilter@31d1fd11, com.mindskip.xzs.configuration.spring.security.RestLoginAuthenticationFilter@3d07aab3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@327d04b1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@79bd98da, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@387b6787, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@6e171b1f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7c4229ef, org.springframework.security.web.session.SessionManagementFilter@19921637, org.springframework.security.web.access.ExceptionTranslationFilter@61eb6415, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6924e65d]
+2024-12-06 15:58:04.474  INFO 27980 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-06 15:58:04.512  INFO 27980 --- [restartedMain] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8000 (http) with context path ''
+2024-12-06 15:58:04.512  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Started XzsApplication in 1.24 seconds (JVM running for 17794.406)
+2024-12-06 15:58:04.514  INFO 27980 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-12-06 15:58:19.252  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Starting XzsApplication on acerro with PID 27980 (D:\Workshop\week19\hdt\week18\xzs-mysql-master\source\xzs\target\classes started by 86190 in D:\Workshop\week19\hdt\week18\xzs-mysql-master\source\xzs)
+2024-12-06 15:58:19.252  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : The following profiles are active: dev
+2024-12-06 15:58:19.255  INFO 27980 --- [restartedMain] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class com.mindskip.xzs.XzsApplication: java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionProxy
+2024-12-06 15:58:19.255 ERROR 27980 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionProxy
+	at sun.reflect.annotation.AnnotationParser.parseClassArray(AnnotationParser.java:724)
+	at sun.reflect.annotation.AnnotationParser.parseArray(AnnotationParser.java:531)
+	at sun.reflect.annotation.AnnotationParser.parseMemberValue(AnnotationParser.java:355)
+	at sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:286)
+	at sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:120)
+	at sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:72)
+	at java.lang.Class.createAnnotationData(Class.java:3521)
+	at java.lang.Class.annotationData(Class.java:3510)
+	at java.lang.Class.getAnnotations(Class.java:3446)
+	at org.springframework.core.type.StandardAnnotationMetadata.<init>(StandardAnnotationMetadata.java:70)
+	at org.springframework.beans.factory.annotation.AnnotatedGenericBeanDefinition.<init>(AnnotatedGenericBeanDefinition.java:58)
+	at org.springframework.context.annotation.AnnotatedBeanDefinitionReader.doRegisterBean(AnnotatedBeanDefinitionReader.java:216)
+	at org.springframework.context.annotation.AnnotatedBeanDefinitionReader.registerBean(AnnotatedBeanDefinitionReader.java:145)
+	at org.springframework.context.annotation.AnnotatedBeanDefinitionReader.register(AnnotatedBeanDefinitionReader.java:135)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:156)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:135)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:127)
+	at org.springframework.boot.SpringApplication.load(SpringApplication.java:686)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:384)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202)
+	at com.mindskip.xzs.XzsApplication.main(XzsApplication.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+
+2024-12-06 16:11:16.300  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Starting XzsApplication on acerro with PID 27980 (D:\Workshop\week19\hdt\week18\xzs-mysql-master\source\xzs\target\classes started by 86190 in D:\Workshop\week19\hdt\week18\xzs-mysql-master\source\xzs)
+2024-12-06 16:11:16.300  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : The following profiles are active: dev
+2024-12-06 16:11:16.303  INFO 27980 --- [restartedMain] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class com.mindskip.xzs.XzsApplication: java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionProxy
+2024-12-06 16:11:16.304 ERROR 27980 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionProxy
+	at sun.reflect.annotation.AnnotationParser.parseClassArray(AnnotationParser.java:724)
+	at sun.reflect.annotation.AnnotationParser.parseArray(AnnotationParser.java:531)
+	at sun.reflect.annotation.AnnotationParser.parseMemberValue(AnnotationParser.java:355)
+	at sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:286)
+	at sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:120)
+	at sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:72)
+	at java.lang.Class.createAnnotationData(Class.java:3521)
+	at java.lang.Class.annotationData(Class.java:3510)
+	at java.lang.Class.getAnnotations(Class.java:3446)
+	at org.springframework.core.type.StandardAnnotationMetadata.<init>(StandardAnnotationMetadata.java:70)
+	at org.springframework.beans.factory.annotation.AnnotatedGenericBeanDefinition.<init>(AnnotatedGenericBeanDefinition.java:58)
+	at org.springframework.context.annotation.AnnotatedBeanDefinitionReader.doRegisterBean(AnnotatedBeanDefinitionReader.java:216)
+	at org.springframework.context.annotation.AnnotatedBeanDefinitionReader.registerBean(AnnotatedBeanDefinitionReader.java:145)
+	at org.springframework.context.annotation.AnnotatedBeanDefinitionReader.register(AnnotatedBeanDefinitionReader.java:135)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:156)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:135)
+	at org.springframework.boot.BeanDefinitionLoader.load(BeanDefinitionLoader.java:127)
+	at org.springframework.boot.SpringApplication.load(SpringApplication.java:686)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:384)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202)
+	at com.mindskip.xzs.XzsApplication.main(XzsApplication.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+
+2024-12-06 16:11:20.909  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Starting XzsApplication on acerro with PID 27980 (D:\Workshop\week19\hdt\week18\xzs-mysql-master\source\xzs\target\classes started by 86190 in D:\Workshop\week19\hdt\week18\xzs-mysql-master\source\xzs)
+2024-12-06 16:11:20.909  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : The following profiles are active: dev
+2024-12-06 16:11:22.410  WARN 27980 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-12-06 16:11:22.411  INFO 27980 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-12-06 16:11:22.411  INFO 27980 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1498 ms
+2024-12-06 16:11:22.891  INFO 27980 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@16ea187, org.springframework.security.web.context.SecurityContextPersistenceFilter@746056b, org.springframework.security.web.header.HeaderWriterFilter@6af2d7e5, org.springframework.web.filter.CorsFilter@1867658b, org.springframework.security.web.authentication.logout.LogoutFilter@667d53e3, com.mindskip.xzs.configuration.spring.security.RestLoginAuthenticationFilter@31b93029, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4e4bb018, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@354c4559, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@49fde1ea, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@47a08151, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@b3fddef, org.springframework.security.web.session.SessionManagementFilter@5f8e0422, org.springframework.security.web.access.ExceptionTranslationFilter@5dfdf8b2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@22f77cf5]
+2024-12-06 16:11:23.142  INFO 27980 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-06 16:11:23.182  INFO 27980 --- [restartedMain] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8000 (http) with context path ''
+2024-12-06 16:11:23.183  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Started XzsApplication in 2.311 seconds (JVM running for 18593.077)
+2024-12-06 16:11:23.186  INFO 27980 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-12-06 16:12:05.653  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Starting XzsApplication on acerro with PID 27980 (D:\Workshop\week19\hdt\week18\xzs-mysql-master\source\xzs\target\classes started by 86190 in D:\Workshop\week19\hdt\week18\xzs-mysql-master\source\xzs)
+2024-12-06 16:12:05.653  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : The following profiles are active: dev
+2024-12-06 16:12:06.388  WARN 27980 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-12-06 16:12:06.389  INFO 27980 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-12-06 16:12:06.389  INFO 27980 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 733 ms
+2024-12-06 16:12:06.788  INFO 27980 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6a1def46, org.springframework.security.web.context.SecurityContextPersistenceFilter@4dade472, org.springframework.security.web.header.HeaderWriterFilter@49b4750d, org.springframework.web.filter.CorsFilter@33bb70e0, org.springframework.security.web.authentication.logout.LogoutFilter@480787ef, com.mindskip.xzs.configuration.spring.security.RestLoginAuthenticationFilter@3cb40c43, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@50297b02, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@56851b2d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3c7300ed, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@195569cf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@28d1ecfe, org.springframework.security.web.session.SessionManagementFilter@5784608c, org.springframework.security.web.access.ExceptionTranslationFilter@6a5e3daf, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@60973d18]
+2024-12-06 16:12:07.020  INFO 27980 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-06 16:12:07.071  INFO 27980 --- [restartedMain] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8000 (http) with context path ''
+2024-12-06 16:12:07.072  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Started XzsApplication in 1.453 seconds (JVM running for 18636.966)
+2024-12-06 16:12:07.075  INFO 27980 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-12-06 16:15:18.490  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Starting XzsApplication on acerro with PID 27980 (D:\Workshop\week19\hdt\week18\xzs-mysql-master\source\xzs\target\classes started by 86190 in D:\Workshop\week19\hdt\week18\xzs-mysql-master\source\xzs)
+2024-12-06 16:15:18.490  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : The following profiles are active: dev
+2024-12-06 16:15:19.200  WARN 27980 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-12-06 16:15:19.201  INFO 27980 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-12-06 16:15:19.201  INFO 27980 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 706 ms
+2024-12-06 16:15:19.581  INFO 27980 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2940358, org.springframework.security.web.context.SecurityContextPersistenceFilter@5e25e93d, org.springframework.security.web.header.HeaderWriterFilter@707fc0fc, org.springframework.web.filter.CorsFilter@4cecfd5b, org.springframework.security.web.authentication.logout.LogoutFilter@591eb4c3, com.mindskip.xzs.configuration.spring.security.RestLoginAuthenticationFilter@492370af, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@31079561, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@74078fb4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7a71c9e8, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@3a7eaa44, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@414dd53a, org.springframework.security.web.session.SessionManagementFilter@50fe764b, org.springframework.security.web.access.ExceptionTranslationFilter@7a5a5a8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7ab68019]
+2024-12-06 16:15:19.811  INFO 27980 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-06 16:15:19.837  INFO 27980 --- [restartedMain] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8000 (http) with context path ''
+2024-12-06 16:15:19.839  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Started XzsApplication in 1.386 seconds (JVM running for 18829.733)
+2024-12-06 16:15:19.840  INFO 27980 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-12-06 16:15:35.269  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Starting XzsApplication on acerro with PID 27980 (D:\Workshop\week19\hdt\week18\xzs-mysql-master\source\xzs\target\classes started by 86190 in D:\Workshop\week19\hdt\week18\xzs-mysql-master\source\xzs)
+2024-12-06 16:15:35.269  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : The following profiles are active: dev
+2024-12-06 16:15:35.972  WARN 27980 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-12-06 16:15:35.973  INFO 27980 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-12-06 16:15:35.973  INFO 27980 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 700 ms
+2024-12-06 16:15:36.371  INFO 27980 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@51ebeb34, org.springframework.security.web.context.SecurityContextPersistenceFilter@67fcf014, org.springframework.security.web.header.HeaderWriterFilter@39e5875f, org.springframework.web.filter.CorsFilter@2b51964d, org.springframework.security.web.authentication.logout.LogoutFilter@168ea6b2, com.mindskip.xzs.configuration.spring.security.RestLoginAuthenticationFilter@4eb57597, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2bc27f2f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1c5ee79a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@9145431, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@478baee7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@13d2af0f, org.springframework.security.web.session.SessionManagementFilter@25774e57, org.springframework.security.web.access.ExceptionTranslationFilter@1d8ccaa3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3bf2ff3]
+2024-12-06 16:15:36.646  INFO 27980 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-06 16:15:36.684  INFO 27980 --- [restartedMain] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8000 (http) with context path ''
+2024-12-06 16:15:36.685  INFO 27980 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Started XzsApplication in 1.445 seconds (JVM running for 18846.579)
+2024-12-06 16:15:36.687  INFO 27980 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-12-06 16:29:44.081  INFO 47164 --- [restartedMain] com.mindskip.xzs.XzsApplication          : Starting XzsApplication on acerro with PID 47164 (D:\Workshop\week19\hdt\week18\xzs-mysql-master\source\xzs\target\classes started by 86190 in D:\Workshop\week19\hdt\week18\xzs-mysql-master\source\xzs)
+2024-12-06 16:29:44.083  INFO 47164 --- [restartedMain] com.mindskip.xzs.XzsApplication          : The following profiles are active: dev
+2024-12-06 16:29:44.178  INFO 47164 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-06 16:29:44.178  INFO 47164 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-06 16:29:46.334  WARN 47164 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-12-06 16:29:46.360  INFO 47164 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2024-12-06 16:29:46.360  INFO 47164 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2182 ms
+2024-12-06 16:29:47.798  INFO 47164 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@16800d57, org.springframework.security.web.context.SecurityContextPersistenceFilter@4b3932ca, org.springframework.security.web.header.HeaderWriterFilter@19a446e, org.springframework.web.filter.CorsFilter@6aaad7cf, org.springframework.security.web.authentication.logout.LogoutFilter@3c64e3ac, com.mindskip.xzs.configuration.spring.security.RestLoginAuthenticationFilter@44ea4f79, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5c8e13bb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@70102097, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@654aed7e, org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter@1e28596c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@759b071a, org.springframework.security.web.session.SessionManagementFilter@21625ebd, org.springframework.security.web.access.ExceptionTranslationFilter@70b11228, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1103697e]
+2024-12-06 16:29:48.410  WARN 47164 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-12-06 16:29:48.475  INFO 47164 --- [restartedMain] org.xnio                                 : XNIO version 3.3.8.Final
+2024-12-06 16:29:48.486  INFO 47164 --- [restartedMain] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2024-12-06 16:29:48.557  INFO 47164 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-12-06 16:29:48.560 ERROR 47164 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8000 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8000 or configure this application to listen on another port.
+
