@@ -13,7 +13,7 @@ module.exports = {
   productionSourceMap: false,
   devServer: {
     open: true,
-    host: '0.0.0.0',
+    host: 'http://192.168.104.213',
     port: 8000,
     https: false,
     hotOnly: false,
@@ -23,7 +23,8 @@ module.exports = {
         changeOrigin: true,
         pathRewrite: {
           '^/api': ''
-        }
+        },
+        secure: false
       }
     }
   },

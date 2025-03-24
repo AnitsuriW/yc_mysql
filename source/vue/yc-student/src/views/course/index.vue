@@ -79,7 +79,7 @@ export default {
   methods: {
     getFullPath(path) {
       const cleanPath = path?.startsWith('/') ? path.substring(1) : path || ''
-      return `http://localhost:8000/${cleanPath}`
+      return `http://192.168.53:8000/${cleanPath}`
     },
     goDetail(id) {
       this.$router.push(`/course/${id}`)

@@ -119,7 +119,7 @@ export default {
     getFullPath(path) {
       if (!path) return '';
       try {
-        return new URL(path, 'http://localhost:8000').href;
+        return new URL(path, 'http://192.168.104.53:8000').href;
       } catch (e) {
         console.error('路径格式错误:', e);
         return '';
@@ -173,7 +173,7 @@ export default {
     getFullPath(path) {
       if (!path) return '';
       try {
-        return new URL(path, 'http://localhost:8000').href;
+        return new URL(path, 'http://192.168.104.53:8000').href;
       } catch (e) {
         console.error('路径格式错误:', e);
         return '';

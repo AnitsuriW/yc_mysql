@@ -40,8 +40,6 @@ public class WebMvcConfiguration extends WebMvcConfigurationSupport {
         registry.addRedirectViewController("/student", "/student/index.html");
         registry.addRedirectViewController("/admin", "/admin/index.html");
     }
-    @Value("${file.upload-dir}")
-    private String uploadDir;
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
@@ -49,7 +47,7 @@ public class WebMvcConfiguration extends WebMvcConfigurationSupport {
                 .addResourceLocations("classpath:/static/")
                 .setCachePeriod(31556926);
 
-        String uploadDir = "D:/uploads/";
+        String uploadDir = "./uploads/";
         registry.addResourceHandler("api/file/**")
                 .addResourceLocations("file:///" + uploadDir)
                 .setCachePeriod(0);
