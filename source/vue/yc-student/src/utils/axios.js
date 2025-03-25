@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const instance = axios.create({
-  baseURL: 'https://ycjx.anitsuri.top/api',  
+  baseURL: '',  
   timeout: 50000, 
 });
 
