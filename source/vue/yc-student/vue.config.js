@@ -13,13 +13,13 @@ module.exports = {
   productionSourceMap: false,
   devServer: {
     open: true,
-    host: 'http://192.168.104.213',
+    host: 'http://123.57.87.238',
     port: 8000,
     https: false,
     hotOnly: false,
     proxy: {
       '/api': {
-        target: 'http://192.168.104.213:8000/',
+        target: 'http://123.57.87.238:8000/',
         changeOrigin: true,
         pathRewrite: {
           '^/api': ''
